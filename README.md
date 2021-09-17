@@ -10,4 +10,4 @@ Melhorias a serem implementadas enquanto estudo SwiftUI
 - [x] Acrescentar outros pokémons de outras regiões. 
 
 ## Telas
-<img src="https://uploaddeimagens.com.br/imagens/2q9torQ">
+<img src="https://uploaddeimagens.com.br/images/003/435/692/original/Simulator_Screen_Shot_-_iPhone_11_Pro_Max_-_2021-09-16_at_17.49.19.png?1631883179">
