@@ -15,6 +15,7 @@
 		1F4430C12C6BAE9C00A4A7D8 /* Pokedex_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430C02C6BAE9C00A4A7D8 /* Pokedex_Watch_AppTests.swift */; };
 		1F4430CB2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430CA2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift */; };
 		1F4430CD2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430CC2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift */; };
+		1FFAE5812C6BAFAD007749E2 /* gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FFAE5802C6BAFAD007749E2 /* gitignore.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		1F4430C62C6BAE9C00A4A7D8 /* Pokedex Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokedex Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4430CA2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		1F4430CC2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FFAE5802C6BAFAD007749E2 /* gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitignore.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		1F4430AE2C6BAE9B00A4A7D8 /* Pokedex Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				1FFAE5802C6BAFAD007749E2 /* gitignore.txt */,
 				1F4430AF2C6BAE9B00A4A7D8 /* PokedexApp.swift */,
 				1F4430B12C6BAE9B00A4A7D8 /* ContentView.swift */,
 				1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 			files = (
 				1F4430B72C6BAE9C00A4A7D8 /* Preview Assets.xcassets in Resources */,
 				1F4430B42C6BAE9C00A4A7D8 /* Assets.xcassets in Resources */,
+				1FFAE5812C6BAFAD007749E2 /* gitignore.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
