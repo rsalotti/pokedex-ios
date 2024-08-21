@@ -6,8 +6,8 @@ target 'Pokedex Watch App' do
   use_frameworks!
 
   # Pods for Pokedex Watch App
-  pod 'SwiftGen', '~> 6.0'
-
+  pod 'SwiftGen'
+    
   target 'Pokedex Watch AppTests' do
     inherit! :search_paths
     # Pods for testing

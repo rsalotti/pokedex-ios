@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C0D29B71EEBD513CBE7443D /* Pods_Pokedex_Watch_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7DA03299C6532433D8304E /* Pods_Pokedex_Watch_AppTests.framework */; };
+		1F300B772C765568006DA76E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F300B762C765568006DA76E /* Assets.swift */; };
 		1F4430AB2C6BAE9B00A4A7D8 /* Pokedex Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1F4430AA2C6BAE9B00A4A7D8 /* Pokedex Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F4430B42C6BAE9C00A4A7D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */; };
 		1F4430B72C6BAE9C00A4A7D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4430B62C6BAE9C00A4A7D8 /* Preview Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F300B762C765568006DA76E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		1F4430A42C6BAE9B00A4A7D8 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4430AA2C6BAE9B00A4A7D8 /* Pokedex Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokedex Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +230,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		1FABD01F2C7650E700A1FC97 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				1F300B762C765568006DA76E /* Assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		1FDDEEBB2C7645A3003E7D08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		1FE8D47D2C761D8E00CB96FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1FABD01F2C7650E700A1FC97 /* Generated */,
 				1F4430B52C6BAE9C00A4A7D8 /* Preview Content */,
 				1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */,
 			);
@@ -487,6 +498,7 @@
 			files = (
 				1FDDEEBC2C7645A3003E7D08 /* PokedexApp.swift in Sources */,
 				1FABD0182C7645CB00A1FC97 /* ContentView.swift in Sources */,
+				1F300B772C765568006DA76E /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +662,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J4M3U924JV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -681,7 +693,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = J4M3U924JV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

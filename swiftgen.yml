@@ -1,0 +1,29 @@
+input_dir: Pokedex Watch App/Resources
+output_dir: Pokedex Watch App/Resources/Generated/
+
+#strings:
+#  inputs: Localizable.strings
+#  outputs:
+#    - templateName: structured-swift4
+#      output: Strings.swift
+
+xcassets:
+  - inputs: Assets.xcassets
+    outputs:
+      - templateName: swift5
+        output: Assets.swift
+        
+#  - inputs: Colors.xcassets
+#    outputs:
+#      - templateName: swift5
+#        output: Colors.swift
+
+      
+## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
+## https://github.com/SwiftGen/SwiftGen/tree/6.6.3/Documentation/
+#
+# Aqui está como você pode executar o comando com um arquivo de configuração swiftgen.yml
+# swiftgen config run --config swiftgen.yml
+#
+# swiftgen config lint --config swiftgen.yml
+# Este comando verificará o arquivo swiftgen.yml e exibirá mensagens sobre quaisquer problemas encontrados.
