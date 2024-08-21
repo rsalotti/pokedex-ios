@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftGen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1EDA7F7FE7D54E80C44AE2B181A401FB /* Pods-Pokedex Watch App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */; };
+		2C0A255CBEF99A364730637C50F789EB /* Pods-Pokedex Watch AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3099E384AB58BCB2C23E29AD492109E7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39E308EFE196AA969D03B976366FDA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
+		853237E19D1838C7E9C21D69B400B5B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
+		867A84B61EE8DB7EDE9B50859903EA4B /* Pods-Pokedex Watch AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */; };
+		90BD471D1C3B9F47EC94CBD43914A7B5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */; };
+		9617968B1057F66AD38E2ADC5A2F619B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
+		A80213122285765327C143165B92EC2C /* Pods-Pokedex Watch App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FE4B74FF788D09A17816DC619CC12D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
+		34F4F57FCAE07F602A17FB858150F178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
+		6AA3F455F753F79B17CA0494B58A71FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D65397D6AB728B677DAD79A68F4BF71;
+			remoteInfo = "Pods-Pokedex Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-umbrella.h"; sourceTree = "<group>"; };
+		147890F5C9A650597802F00057FF47D7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist"; sourceTree = "<group>"; };
+		171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests"; path = Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		295BD810402F06B4CDDBADE6EA996E91 /* Pods-Pokedex Watch AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch AppTests"; path = Pods_Pokedex_Watch_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA19EE1C7234242A3956F909DCB65EF /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5DC5F5FF08F15D88A66BBDFD9E2D36BE /* Pods-Pokedex Watch AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch AppTests.modulemap"; sourceTree = "<group>"; };
+		620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch App"; path = Pods_Pokedex_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m"; sourceTree = "<group>"; };
+		773FD42D2B50CAC3443DD24092021072 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch AppTests-dummy.m"; sourceTree = "<group>"; };
+		AA644D485BAD2329774FA71F27B4D457 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap"; sourceTree = "<group>"; };
+		AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-dummy.m"; sourceTree = "<group>"; };
+		AF9B50EB25FA0912A81B8AEE2B385B96 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
+		BA84D6AB43AD05817F5CDAD11151CFA3 /* Pods-Pokedex Watch AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-Info.plist"; sourceTree = "<group>"; };
+		BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.debug.xcconfig"; sourceTree = "<group>"; };
+		C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch AppTests-umbrella.h"; sourceTree = "<group>"; };
+		D77CBEAB8814E20DE06299232F7EE0F1 /* Pods-Pokedex Watch App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Info.plist"; sourceTree = "<group>"; };
+		E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0177FA02E438918A1BCB3765F6555C /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		F55C55F56B670E8029DB99619BE4D50E /* Pods-Pokedex Watch App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7DE635D003A0C3B82E1854D1563ED60 /* Pods-Pokedex Watch App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA682F43FA31EA91F90D27AB4D4E9DC8 /* Pods-Pokedex Watch App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App.modulemap"; sourceTree = "<group>"; };
+		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7212E230C2689383A4F80905A3D145BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853237E19D1838C7E9C21D69B400B5B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A9DDE7F4A080831CEEB2DAAA42657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E308EFE196AA969D03B976366FDA4D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBAD11ADFAAE17E1675193191D0490E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9617968B1057F66AD38E2ADC5A2F619B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DF4A29620F30ECCD85AE71F22FD52C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14FC0D92685540681E6F31BB5BB2A3CE /* Pods-Pokedex Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				FA682F43FA31EA91F90D27AB4D4E9DC8 /* Pods-Pokedex Watch App.modulemap */,
+				F7DE635D003A0C3B82E1854D1563ED60 /* Pods-Pokedex Watch App-acknowledgements.markdown */,
+				F55C55F56B670E8029DB99619BE4D50E /* Pods-Pokedex Watch App-acknowledgements.plist */,
+				AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */,
+				D77CBEAB8814E20DE06299232F7EE0F1 /* Pods-Pokedex Watch App-Info.plist */,
+				10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */,
+				C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */,
+				F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */,
+			);
+			name = "Pods-Pokedex Watch App";
+			path = "Target Support Files/Pods-Pokedex Watch App";
+			sourceTree = "<group>";
+		};
+		585CCD70D47949D4A833193B7EE4B098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */,
+				171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
+				295BD810402F06B4CDDBADE6EA996E91 /* Pods-Pokedex Watch AppTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ABCCF16C7D65D2D01670EF82A443DE5 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C7581DA027825AF3BEB8C990477B53 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FC0D92685540681E6F31BB5BB2A3CE /* Pods-Pokedex Watch App */,
+				91700ECE4E485048F24CD65D99AA8D9A /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
+				BB4E5A13A8B1425A275F268A794CAE4F /* Pods-Pokedex Watch AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7ABCCF16C7D65D2D01670EF82A443DE5 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
+			);
+			name = SwiftGen;
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		91700ECE4E485048F24CD65D99AA8D9A /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA644D485BAD2329774FA71F27B4D457 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */,
+				3DA19EE1C7234242A3956F909DCB65EF /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */,
+				773FD42D2B50CAC3443DD24092021072 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */,
+				65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */,
+				147890F5C9A650597802F00057FF47D7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */,
+				8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */,
+				1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */,
+				3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			path = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */,
+				B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGen";
+			sourceTree = "<group>";
+		};
+		BB4E5A13A8B1425A275F268A794CAE4F /* Pods-Pokedex Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DC5F5FF08F15D88A66BBDFD9E2D36BE /* Pods-Pokedex Watch AppTests.modulemap */,
+				EC0177FA02E438918A1BCB3765F6555C /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */,
+				AF9B50EB25FA0912A81B8AEE2B385B96 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */,
+				A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */,
+				BA84D6AB43AD05817F5CDAD11151CFA3 /* Pods-Pokedex Watch AppTests-Info.plist */,
+				C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */,
+				E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */,
+				BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */,
+			);
+			name = "Pods-Pokedex Watch AppTests";
+			path = "Target Support Files/Pods-Pokedex Watch AppTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */,
+				08DF4A29620F30ECCD85AE71F22FD52C /* Pods */,
+				585CCD70D47949D4A833193B7EE4B098 /* Products */,
+				77C7581DA027825AF3BEB8C990477B53 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FBE2846981EB5015307768767905299 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3099E384AB58BCB2C23E29AD492109E7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D1680194C96441380F1E3F686D155D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80213122285765327C143165B92EC2C /* Pods-Pokedex Watch App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75E1C657E8D279E6250EA47CE5593CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0A255CBEF99A364730637C50F789EB /* Pods-Pokedex Watch AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E969587E27FA4DDBD5080832F0B4FBC /* Pods-Pokedex Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB2A9782226B10398D42FC5EDC39787 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch AppTests" */;
+			buildPhases = (
+				E75E1C657E8D279E6250EA47CE5593CF /* Headers */,
+				55F60450E20B02661683BA0155DFD46D /* Sources */,
+				B85A9DDE7F4A080831CEEB2DAAA42657 /* Frameworks */,
+				BC848BBD42CC2B8D5B06C2CFD7612AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02209DF5F535093B3BDDC7C6E6EC8593 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pokedex Watch AppTests";
+			productName = Pods_Pokedex_Watch_AppTests;
+			productReference = 295BD810402F06B4CDDBADE6EA996E91 /* Pods-Pokedex Watch AppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E03CF83FC1339276C1C46D6E217E38 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */;
+			buildPhases = (
+				D2D1680194C96441380F1E3F686D155D /* Headers */,
+				0D6B044016971C8FE888B595BC496CE3 /* Sources */,
+				EDBAD11ADFAAE17E1675193191D0490E /* Frameworks */,
+				9A324B88D7918FF5AD48C96545725E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				941721F9CB054A539E394AB1A67EBB0D /* PBXTargetDependency */,
+			);
+			name = "Pods-Pokedex Watch App";
+			productName = Pods_Pokedex_Watch_App;
+			productReference = 620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C9930AD60479B817BE041FA58EECC07 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E5F634866170382DEA994056053769 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */;
+			buildPhases = (
+				7FBE2846981EB5015307768767905299 /* Headers */,
+				AC28191C67DD06F21A1E9322C3270FB9 /* Sources */,
+				7212E230C2689383A4F80905A3D145BD /* Frameworks */,
+				C8201F75EB2BCE26511F5A57E4D34424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7429F17E99F1005D70CAB0ECECB354D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			productName = Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests;
+			productReference = 171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 585CCD70D47949D4A833193B7EE4B098 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */,
+				9C9930AD60479B817BE041FA58EECC07 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
+				4E969587E27FA4DDBD5080832F0B4FBC /* Pods-Pokedex Watch AppTests */,
+				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A324B88D7918FF5AD48C96545725E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC848BBD42CC2B8D5B06C2CFD7612AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8201F75EB2BCE26511F5A57E4D34424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6B044016971C8FE888B595BC496CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDA7F7FE7D54E80C44AE2B181A401FB /* Pods-Pokedex Watch App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55F60450E20B02661683BA0155DFD46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867A84B61EE8DB7EDE9B50859903EA4B /* Pods-Pokedex Watch AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC28191C67DD06F21A1E9322C3270FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BD471D1C3B9F47EC94CBD43914A7B5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02209DF5F535093B3BDDC7C6E6EC8593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Pokedex Watch App";
+			target = 5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */;
+			targetProxy = 6AA3F455F753F79B17CA0494B58A71FA /* PBXContainerItemProxy */;
+		};
+		7429F17E99F1005D70CAB0ECECB354D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 34F4F57FCAE07F602A17FB858150F178 /* PBXContainerItemProxy */;
+		};
+		941721F9CB054A539E394AB1A67EBB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 0FE4B74FF788D09A17816DC619CC12D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BBA00529C804E6592F84716BA138511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		472E833EA6BAF581F60492B34323B140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		557FE2B27ADCEB4B21493E6950D757C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		64C567037E29EB062BF295CAC69E65DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		6A2E3C1168CD16EA706BBA0EE8BAA6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		78BA53369992E89B87412EA1C13FCD9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C209306350D9658373CDED92E7CF9361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		D35E46BC5E09ED4F34D25BE0608F1F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		DE03FE0DA446CF9612BF037D66186020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		E0E4F65333F78A6570174C95D6232560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E5F634866170382DEA994056053769 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35E46BC5E09ED4F34D25BE0608F1F90 /* Debug */,
+				C209306350D9658373CDED92E7CF9361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E4F65333F78A6570174C95D6232560 /* Debug */,
+				6A2E3C1168CD16EA706BBA0EE8BAA6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB2A9782226B10398D42FC5EDC39787 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BBA00529C804E6592F84716BA138511 /* Debug */,
+				DE03FE0DA446CF9612BF037D66186020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E03CF83FC1339276C1C46D6E217E38 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557FE2B27ADCEB4B21493E6950D757C8 /* Debug */,
+				64C567037E29EB062BF295CAC69E65DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BA53369992E89B87412EA1C13FCD9F /* Debug */,
+				472E833EA6BAF581F60492B34323B140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

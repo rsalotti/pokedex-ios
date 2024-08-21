@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0D29B71EEBD513CBE7443D /* Pods_Pokedex_Watch_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7DA03299C6532433D8304E /* Pods_Pokedex_Watch_AppTests.framework */; };
 		1F4430AB2C6BAE9B00A4A7D8 /* Pokedex Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1F4430AA2C6BAE9B00A4A7D8 /* Pokedex Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F4430B02C6BAE9B00A4A7D8 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430AF2C6BAE9B00A4A7D8 /* PokedexApp.swift */; };
 		1F4430B22C6BAE9B00A4A7D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430B12C6BAE9B00A4A7D8 /* ContentView.swift */; };
@@ -15,7 +16,8 @@
 		1F4430C12C6BAE9C00A4A7D8 /* Pokedex_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430C02C6BAE9C00A4A7D8 /* Pokedex_Watch_AppTests.swift */; };
 		1F4430CB2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430CA2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift */; };
 		1F4430CD2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4430CC2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift */; };
-		1FFAE5812C6BAFAD007749E2 /* gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FFAE5802C6BAFAD007749E2 /* gitignore.txt */; };
+		639259D155DE65166F836919 /* Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB18FF93F38C5ADDDB200B95 /* Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework */; };
+		A1AD6C968FCBBF47D37A9B81 /* Pods_Pokedex_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DD2A8160CE39171A8B25B4 /* Pods_Pokedex_Watch_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,15 @@
 		1F4430C62C6BAE9C00A4A7D8 /* Pokedex Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokedex Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4430CA2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		1F4430CC2C6BAE9C00A4A7D8 /* Pokedex_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1FFAE5802C6BAFAD007749E2 /* gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitignore.txt; sourceTree = "<group>"; };
+		2CF44CD6CFB1C6650F24DC71 /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A7DA03299C6532433D8304E /* Pods_Pokedex_Watch_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex_Watch_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB18FF93F38C5ADDDB200B95 /* Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D988034D9CEB55A61E8EC7C8 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9D777C6A47878B4603D40B7 /* Pods-Pokedex Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.debug.xcconfig"; sourceTree = "<group>"; };
+		E6DD2A8160CE39171A8B25B4 /* Pods_Pokedex_Watch_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AF4790F3EDDC6601E4706C /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App.release.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		F28A3411A59B120AB398C44F /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99497F9909E29879DD32EF6 /* Pods-Pokedex Watch AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch AppTests.release.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD6C968FCBBF47D37A9B81 /* Pods_Pokedex_Watch_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0D29B71EEBD513CBE7443D /* Pods_Pokedex_Watch_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +102,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639259D155DE65166F836919 /* Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A29357EE52501DFBC8228E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D777C6A47878B4603D40B7 /* Pods-Pokedex Watch App.debug.xcconfig */,
+				E8AF4790F3EDDC6601E4706C /* Pods-Pokedex Watch App.release.xcconfig */,
+				F28A3411A59B120AB398C44F /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */,
+				D988034D9CEB55A61E8EC7C8 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */,
+				2CF44CD6CFB1C6650F24DC71 /* Pods-Pokedex Watch AppTests.debug.xcconfig */,
+				F99497F9909E29879DD32EF6 /* Pods-Pokedex Watch AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1F44309D2C6BAE9A00A4A7D8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +130,8 @@
 				1F4430BF2C6BAE9C00A4A7D8 /* Pokedex Watch AppTests */,
 				1F4430C92C6BAE9C00A4A7D8 /* Pokedex Watch AppUITests */,
 				1F4430A52C6BAE9B00A4A7D8 /* Products */,
+				06A29357EE52501DFBC8228E /* Pods */,
+				E3E973CC764AA05D7967F200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,10 +149,9 @@
 		1F4430AE2C6BAE9B00A4A7D8 /* Pokedex Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				1FFAE5802C6BAFAD007749E2 /* gitignore.txt */,
-				1F4430AF2C6BAE9B00A4A7D8 /* PokedexApp.swift */,
-				1F4430B12C6BAE9B00A4A7D8 /* ContentView.swift */,
-				1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */,
+				1FE8D47F2C761E7300CB96FE /* Main */,
+				1FE8D47E2C761DE000CB96FE /* Features */,
+				1FE8D47D2C761D8E00CB96FE /* Resources */,
 				1F4430B52C6BAE9C00A4A7D8 /* Preview Content */,
 			);
 			path = "Pokedex Watch App";
@@ -154,6 +182,40 @@
 			path = "Pokedex Watch AppUITests";
 			sourceTree = "<group>";
 		};
+		1FE8D47D2C761D8E00CB96FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F4430B32C6BAE9C00A4A7D8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FE8D47E2C761DE000CB96FE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1F4430B12C6BAE9B00A4A7D8 /* ContentView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1FE8D47F2C761E7300CB96FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1F4430AF2C6BAE9B00A4A7D8 /* PokedexApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E3E973CC764AA05D7967F200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD2A8160CE39171A8B25B4 /* Pods_Pokedex_Watch_App.framework */,
+				CB18FF93F38C5ADDDB200B95 /* Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework */,
+				8A7DA03299C6532433D8304E /* Pods_Pokedex_Watch_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F4430D02C6BAE9C00A4A7D8 /* Build configuration list for PBXNativeTarget "Pokedex Watch App" */;
 			buildPhases = (
+				9124A06101C7A749A8435DDF /* [CP] Check Pods Manifest.lock */,
 				1F4430A62C6BAE9B00A4A7D8 /* Sources */,
 				1F4430A72C6BAE9B00A4A7D8 /* Frameworks */,
 				1F4430A82C6BAE9B00A4A7D8 /* Resources */,
@@ -195,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F4430D72C6BAE9C00A4A7D8 /* Build configuration list for PBXNativeTarget "Pokedex Watch AppTests" */;
 			buildPhases = (
+				12E87E8CC11B8A8E1369D1F3 /* [CP] Check Pods Manifest.lock */,
 				1F4430B82C6BAE9C00A4A7D8 /* Sources */,
 				1F4430B92C6BAE9C00A4A7D8 /* Frameworks */,
 				1F4430BA2C6BAE9C00A4A7D8 /* Resources */,
@@ -213,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F4430DA2C6BAE9C00A4A7D8 /* Build configuration list for PBXNativeTarget "Pokedex Watch AppUITests" */;
 			buildPhases = (
+				20F87742C7C7027042C4535F /* [CP] Check Pods Manifest.lock */,
 				1F4430C22C6BAE9C00A4A7D8 /* Sources */,
 				1F4430C32C6BAE9C00A4A7D8 /* Frameworks */,
 				1F4430C42C6BAE9C00A4A7D8 /* Resources */,
@@ -288,7 +353,6 @@
 			files = (
 				1F4430B72C6BAE9C00A4A7D8 /* Preview Assets.xcassets in Resources */,
 				1F4430B42C6BAE9C00A4A7D8 /* Assets.xcassets in Resources */,
-				1FFAE5812C6BAFAD007749E2 /* gitignore.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +371,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E87E8CC11B8A8E1369D1F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokedex Watch AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20F87742C7C7027042C4535F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokedex Watch App-Pokedex Watch AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9124A06101C7A749A8435DDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokedex Watch App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F4430A62C6BAE9B00A4A7D8 /* Sources */ = {
@@ -472,6 +605,7 @@
 		};
 		1F4430D12C6BAE9C00A4A7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D777C6A47878B4603D40B7 /* Pods-Pokedex Watch App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,6 +636,7 @@
 		};
 		1F4430D22C6BAE9C00A4A7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8AF4790F3EDDC6601E4706C /* Pods-Pokedex Watch App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -566,6 +701,7 @@
 		};
 		1F4430D82C6BAE9C00A4A7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF44CD6CFB1C6650F24DC71 /* Pods-Pokedex Watch AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,6 +723,7 @@
 		};
 		1F4430D92C6BAE9C00A4A7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99497F9909E29879DD32EF6 /* Pods-Pokedex Watch AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +746,7 @@
 		};
 		1F4430DB2C6BAE9C00A4A7D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28A3411A59B120AB398C44F /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -629,6 +767,7 @@
 		};
 		1F4430DC2C6BAE9C00A4A7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D988034D9CEB55A61E8EC7C8 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

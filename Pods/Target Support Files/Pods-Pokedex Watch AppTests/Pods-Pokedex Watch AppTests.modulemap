@@ -1,0 +1,6 @@
+framework module Pods_Pokedex_Watch_AppTests {
+  umbrella header "Pods-Pokedex Watch AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
