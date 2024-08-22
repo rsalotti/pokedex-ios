@@ -291,7 +291,7 @@
 			buildConfigurationList = 1F4430D02C6BAE9C00A4A7D8 /* Build configuration list for PBXNativeTarget "Pokedex Watch App" */;
 			buildPhases = (
 				55469D00EEEEFF903E121A93 /* [CP] Check Pods Manifest.lock */,
-				1F300B782C7662DD006DA76E /* SwiftGen */,
+				1F300B782C7662DD006DA76E /* [Tool] SwiftGen */,
 				1F4430A62C6BAE9B00A4A7D8 /* Sources */,
 				1F4430A72C6BAE9B00A4A7D8 /* Frameworks */,
 				1F4430A82C6BAE9B00A4A7D8 /* Resources */,
@@ -446,7 +446,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1F300B782C7662DD006DA76E /* SwiftGen */ = {
+		1F300B782C7662DD006DA76E /* [Tool] SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +455,7 @@
 			);
 			inputPaths = (
 			);
-			name = SwiftGen;
+			name = "[Tool] SwiftGen";
 			outputFileListPaths = (
 			);
 			outputPaths = (
