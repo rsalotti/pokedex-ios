@@ -1,5 +1,5 @@
 //
-//  PokeListView.swift
+//  PokemonRowView.swift
 //  Pokedex Watch App
 //
 //  Created by Ricardo Santos on 26/08/24.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct PokeListView: View {
-    var id: String
+struct PokemonRowView: View {
+    var id: Int
     var name: String
     
     var body: some View {
@@ -17,7 +17,7 @@ struct PokeListView: View {
                 .resizable()
                 .frame(width: 40, height: 40, alignment: .center)
                 .padding(5)
-            Text("Bulbassaur")
+            Text(name)
                 .font(.title3)
         }
     }

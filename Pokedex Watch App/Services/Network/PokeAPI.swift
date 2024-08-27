@@ -34,7 +34,13 @@ extension PokeAPI: TargetType {
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case    .getRegions,
+                .getPokemons(_),
+                .getPokemon(_),
+                .getEvolutions(_):
+            return .get
+        }
     }
     
     var task: Task {

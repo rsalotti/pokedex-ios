@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  PokemonDetailView.swift
 //  Pokedex Watch App
 //
 //  Created by Ricardo Santos on 26/08/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct PokemonDetailView: View {
     var body: some View {
         TabView {
             VStack {
