@@ -23,7 +23,7 @@ class PokemonListViewModel: ObservableObject {
     }
     
     func getPokemons() -> [PKDPokemonEntry] {
-        guard let pokemonEntries = pokedex.pokemonEntries else {
+        guard let pokemonEntries = pokedex?.pokemonEntries else {
             return []
         }
         return pokemonEntries

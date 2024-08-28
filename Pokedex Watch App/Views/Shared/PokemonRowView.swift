@@ -13,11 +13,11 @@ struct PokemonRowView: View {
     
     var body: some View {
         HStack {
-            Image(uiImage: Asset._001.image)
+            Image.getPokemonKantoImage(for: id)
                 .resizable()
                 .frame(width: 40, height: 40, alignment: .center)
-                .padding(5)
-            Text(name)
+                .padding(.trailing, 8)
+            Text(name.capitalizedFirstLetter())
                 .font(.title3)
         }
     }

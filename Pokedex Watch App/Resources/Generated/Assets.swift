@@ -144,6 +144,7 @@ internal enum Asset {
   internal static let _120 = ImageAsset(name: "120")
   internal static let _121 = ImageAsset(name: "121")
   internal static let _122 = ImageAsset(name: "122")
+  internal static let _123 = ImageAsset(name: "123")
   internal static let _124 = ImageAsset(name: "124")
   internal static let _125 = ImageAsset(name: "125")
   internal static let _126 = ImageAsset(name: "126")

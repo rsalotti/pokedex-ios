@@ -1,0 +1,167 @@
+//
+//  Image+Extension.swift
+//  Pokedex Watch App
+//
+//  Created by Ricardo Santos on 27/08/24.
+//
+
+import SwiftUI
+
+extension Image {
+    static func getPokemonKantoImage(for id: Int) -> Image {
+        switch id {
+        case 1: return Asset._001.swiftUIImage
+        case 2: return Asset._002.swiftUIImage
+        case 3: return Asset._003.swiftUIImage
+        case 4: return Asset._004.swiftUIImage
+        case 5: return Asset._005.swiftUIImage
+        case 6: return Asset._006.swiftUIImage
+        case 7: return Asset._007.swiftUIImage
+        case 8: return Asset._008.swiftUIImage
+        case 9: return Asset._009.swiftUIImage
+        case 10: return Asset._010.swiftUIImage
+        case 11: return Asset._011.swiftUIImage
+        case 12: return Asset._012.swiftUIImage
+        case 13: return Asset._013.swiftUIImage
+        case 14: return Asset._014.swiftUIImage
+        case 15: return Asset._015.swiftUIImage
+        case 16: return Asset._016.swiftUIImage
+        case 17: return Asset._017.swiftUIImage
+        case 18: return Asset._018.swiftUIImage
+        case 19: return Asset._019.swiftUIImage
+        case 20: return Asset._020.swiftUIImage
+        case 21: return Asset._021.swiftUIImage
+        case 22: return Asset._022.swiftUIImage
+        case 23: return Asset._023.swiftUIImage
+        case 24: return Asset._024.swiftUIImage
+        case 25: return Asset._025.swiftUIImage
+        case 26: return Asset._026.swiftUIImage
+        case 27: return Asset._027.swiftUIImage
+        case 28: return Asset._028.swiftUIImage
+        case 29: return Asset._029.swiftUIImage
+        case 30: return Asset._030.swiftUIImage
+        case 31: return Asset._031.swiftUIImage
+        case 32: return Asset._032.swiftUIImage
+        case 33: return Asset._033.swiftUIImage
+        case 34: return Asset._034.swiftUIImage
+        case 35: return Asset._035.swiftUIImage
+        case 36: return Asset._036.swiftUIImage
+        case 37: return Asset._037.swiftUIImage
+        case 38: return Asset._038.swiftUIImage
+        case 39: return Asset._039.swiftUIImage
+        case 40: return Asset._040.swiftUIImage
+        case 41: return Asset._041.swiftUIImage
+        case 42: return Asset._042.swiftUIImage
+        case 43: return Asset._043.swiftUIImage
+        case 44: return Asset._044.swiftUIImage
+        case 45: return Asset._045.swiftUIImage
+        case 46: return Asset._046.swiftUIImage
+        case 47: return Asset._047.swiftUIImage
+        case 48: return Asset._048.swiftUIImage
+        case 49: return Asset._049.swiftUIImage
+        case 50: return Asset._050.swiftUIImage
+        case 51: return Asset._051.swiftUIImage
+        case 52: return Asset._052.swiftUIImage
+        case 53: return Asset._053.swiftUIImage
+        case 54: return Asset._054.swiftUIImage
+        case 55: return Asset._055.swiftUIImage
+        case 56: return Asset._056.swiftUIImage
+        case 57: return Asset._057.swiftUIImage
+        case 58: return Asset._058.swiftUIImage
+        case 59: return Asset._059.swiftUIImage
+        case 60: return Asset._060.swiftUIImage
+        case 61: return Asset._061.swiftUIImage
+        case 62: return Asset._062.swiftUIImage
+        case 63: return Asset._063.swiftUIImage
+        case 64: return Asset._064.swiftUIImage
+        case 65: return Asset._065.swiftUIImage
+        case 66: return Asset._066.swiftUIImage
+        case 67: return Asset._067.swiftUIImage
+        case 68: return Asset._068.swiftUIImage
+        case 69: return Asset._069.swiftUIImage
+        case 70: return Asset._070.swiftUIImage
+        case 71: return Asset._071.swiftUIImage
+        case 72: return Asset._072.swiftUIImage
+        case 73: return Asset._073.swiftUIImage
+        case 74: return Asset._074.swiftUIImage
+        case 75: return Asset._075.swiftUIImage
+        case 76: return Asset._076.swiftUIImage
+        case 77: return Asset._077.swiftUIImage
+        case 78: return Asset._078.swiftUIImage
+        case 79: return Asset._079.swiftUIImage
+        case 80: return Asset._080.swiftUIImage
+        case 81: return Asset._081.swiftUIImage
+        case 82: return Asset._082.swiftUIImage
+        case 83: return Asset._083.swiftUIImage
+        case 84: return Asset._084.swiftUIImage
+        case 85: return Asset._085.swiftUIImage
+        case 86: return Asset._086.swiftUIImage
+        case 87: return Asset._087.swiftUIImage
+        case 88: return Asset._088.swiftUIImage
+        case 89: return Asset._089.swiftUIImage
+        case 90: return Asset._090.swiftUIImage
+        case 91: return Asset._091.swiftUIImage
+        case 92: return Asset._092.swiftUIImage
+        case 93: return Asset._093.swiftUIImage
+        case 94: return Asset._094.swiftUIImage
+        case 95: return Asset._095.swiftUIImage
+        case 96: return Asset._096.swiftUIImage
+        case 97: return Asset._097.swiftUIImage
+        case 98: return Asset._098.swiftUIImage
+        case 99: return Asset._099.swiftUIImage
+        case 100: return Asset._100.swiftUIImage
+        case 101: return Asset._101.swiftUIImage
+        case 102: return Asset._102.swiftUIImage
+        case 103: return Asset._103.swiftUIImage
+        case 104: return Asset._104.swiftUIImage
+        case 105: return Asset._105.swiftUIImage
+        case 106: return Asset._106.swiftUIImage
+        case 107: return Asset._107.swiftUIImage
+        case 108: return Asset._108.swiftUIImage
+        case 109: return Asset._109.swiftUIImage
+        case 110: return Asset._110.swiftUIImage
+        case 111: return Asset._111.swiftUIImage
+        case 112: return Asset._112.swiftUIImage
+        case 113: return Asset._113.swiftUIImage
+        case 114: return Asset._114.swiftUIImage
+        case 115: return Asset._115.swiftUIImage
+        case 116: return Asset._116.swiftUIImage
+        case 117: return Asset._117.swiftUIImage
+        case 118: return Asset._118.swiftUIImage
+        case 119: return Asset._119.swiftUIImage
+        case 120: return Asset._120.swiftUIImage
+        case 121: return Asset._121.swiftUIImage
+        case 122: return Asset._122.swiftUIImage
+        case 123: return Asset._123.swiftUIImage
+        case 124: return Asset._124.swiftUIImage
+        case 125: return Asset._125.swiftUIImage
+        case 126: return Asset._126.swiftUIImage
+        case 127: return Asset._127.swiftUIImage
+        case 128: return Asset._128.swiftUIImage
+        case 129: return Asset._129.swiftUIImage
+        case 130: return Asset._130.swiftUIImage
+        case 131: return Asset._131.swiftUIImage
+        case 132: return Asset._132.swiftUIImage
+        case 133: return Asset._133.swiftUIImage
+        case 134: return Asset._134.swiftUIImage
+        case 135: return Asset._135.swiftUIImage
+        case 136: return Asset._136.swiftUIImage
+        case 137: return Asset._137.swiftUIImage
+        case 138: return Asset._138.swiftUIImage
+        case 139: return Asset._139.swiftUIImage
+        case 140: return Asset._140.swiftUIImage
+        case 141: return Asset._141.swiftUIImage
+        case 142: return Asset._142.swiftUIImage
+        case 143: return Asset._143.swiftUIImage
+        case 144: return Asset._144.swiftUIImage
+        case 145: return Asset._145.swiftUIImage
+        case 146: return Asset._146.swiftUIImage
+        case 147: return Asset._147.swiftUIImage
+        case 148: return Asset._148.swiftUIImage
+        case 149: return Asset._149.swiftUIImage
+        case 150: return Asset._150.swiftUIImage
+        case 151: return Asset._151.swiftUIImage
+        default: return Image(uiImage: UIImage())
+        }
+    }
+}
