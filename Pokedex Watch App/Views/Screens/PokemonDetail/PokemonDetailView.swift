@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct PokemonDetailView: View {
+    @StateObject var viewModel: PokemonDetailViewModel
+    
     var body: some View {
         TabView {
             VStack {
-                Image("001")
+                Image.getPokemonKantoImage(for: viewModel.pokemon?.id ?? 1)
                     .resizable()
                     .frame(width: 85, height: 85, alignment: .center)
-                Text("Bulbasaur")
+                Text(viewModel.pokemon?.name.capitalizedFirstLetter() ?? "Unknown")
                     .font(.title2)
                     .bold()
                 HStack(spacing: -5.0) {
@@ -22,6 +24,7 @@ struct PokemonDetailView: View {
                     Image("Poison")
                 }
             }
+            
             Text("Lorem ipsum")
         }
     }

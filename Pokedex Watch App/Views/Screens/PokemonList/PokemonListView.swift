@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct PokemonListView: View {
-    ///Region of Pokemons `2` is the Kanto
+    //Region of Pokemons '2' is the Kanto
     let region: Int = 2
-    @StateObject fileprivate var viewModel = PokemonListViewModel()
+    @StateObject var viewModel = PokemonListViewModel()
     
     var body: some View {
         NavigationStack {
             List(viewModel.getPokemons()) { pokemon in
-                NavigationLink(destination: PokemonDetailView()) {
+                let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
+                NavigationLink(destination: destination) {
                     PokemonRowView(id: pokemon.id, name: pokemon.pokemonSpecies.name)
                 }
             }
             .onAppear {
                 Task {
-                    await viewModel.fetchPokemons(by: region)
+                    await viewModel.fetchRegionPokemons(by: region)
                 }
             }
         }

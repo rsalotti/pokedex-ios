@@ -12,7 +12,6 @@ enum PokeAPI {
     case getRegions
     case getPokemons(region: Int)
     case getPokemon(id: Int)
-    case getEvolutions(id: Int)
 }
 
 extension PokeAPI: TargetType {
@@ -28,8 +27,6 @@ extension PokeAPI: TargetType {
             return "/pokedex/\(region)/"
         case .getPokemon(let id):
             return "/pokemon/\(id)/"
-        case .getEvolutions(let id):
-            return "/evolution-chain/\(id)/"
         }
     }
     
@@ -37,8 +34,7 @@ extension PokeAPI: TargetType {
         switch self {
         case    .getRegions,
                 .getPokemons(_),
-                .getPokemon(_),
-                .getEvolutions(_):
+                .getPokemon(_):
             return .get
         }
     }

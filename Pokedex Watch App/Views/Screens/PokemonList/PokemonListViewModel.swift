@@ -10,9 +10,9 @@ import Foundation
 class PokemonListViewModel: ObservableObject {
     @Published var pokedex: Pokedex? = nil
     
-    func fetchPokemons(by region: Int) async {
+    func fetchRegionPokemons(by region: Int) async {
         do {
-            let pokedex = try await PokeRepository().getPokemons(id: region)
+            let pokedex = try await PokeRepository().fetchRegionPokemons(id: region)
             DispatchQueue.main.async {
                 self.pokedex = pokedex
             }
