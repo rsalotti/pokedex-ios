@@ -13,13 +13,14 @@ struct PokemonListView: View {
     @StateObject var viewModel = PokemonListViewModel()
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             List(viewModel.getPokemons()) { pokemon in
                 let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
                 NavigationLink(destination: destination) {
                     PokemonRowView(id: pokemon.id, name: pokemon.pokemonSpecies.name)
                 }
             }
+            .navigationTitle("Kanto")
             .onAppear {
                 Task {
                     await viewModel.fetchRegionPokemons(by: region)
