@@ -8,12 +8,14 @@
 import Foundation
 
 struct Pokemon: Codable {
+    ///Height está em Decimetro
     let height: Int
     let id: Int
     let name: String
     let order: Int
     let stats: [Stat]
     let types: [TypeElement]
+    ///Weight está em Hectograma
     let weight: Int
 
     enum CodingKeys: String, CodingKey {
@@ -43,12 +45,12 @@ struct StatDetail: Codable {
     let url: String
 }
 
-struct TypeElement: Codable {
+struct TypeElement: Codable, Hashable {
     let slot: Int
     let type: TypeDetail
 }
 
-struct TypeDetail: Codable {
-    let name: String
+struct TypeDetail: Codable, Hashable {
+    let name: PokemonType
     let url: String
 }

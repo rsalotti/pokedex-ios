@@ -19,6 +19,7 @@ struct PokemonRowView: View {
                 .padding(.trailing, 8)
             Text(name.capitalizedFirstLetter())
                 .font(.title3)
+                .lineLimit(1)
         }
     }
 }

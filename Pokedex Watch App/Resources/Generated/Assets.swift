@@ -176,7 +176,7 @@ internal enum Asset {
   internal static let bug = ImageAsset(name: "Bug")
   internal static let dark = ImageAsset(name: "Dark")
   internal static let dragon = ImageAsset(name: "Dragon")
-  internal static let eletric = ImageAsset(name: "Eletric")
+  internal static let electric = ImageAsset(name: "Electric")
   internal static let fairy = ImageAsset(name: "Fairy")
   internal static let fight = ImageAsset(name: "Fight")
   internal static let fire = ImageAsset(name: "Fire")
