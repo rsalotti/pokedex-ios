@@ -36,8 +36,8 @@ struct PokemonDetailView: View {
             ForEach(pokemon.types, id: \.self) { element in
                 element.type.name.image
                     .resizable()
+                    .scaledToFit()
                     .frame(width: 50, height: 50)
-                    .aspectRatio(contentMode: .fit)
             }
         }
     }
