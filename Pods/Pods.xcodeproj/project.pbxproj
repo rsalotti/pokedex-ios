@@ -15,86 +15,315 @@
 			dependencies = (
 			);
 			name = SwiftGen;
-			productName = SwiftGen;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1EDA7F7FE7D54E80C44AE2B181A401FB /* Pods-Pokedex Watch App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */; };
-		2C0A255CBEF99A364730637C50F789EB /* Pods-Pokedex Watch AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3099E384AB58BCB2C23E29AD492109E7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39E308EFE196AA969D03B976366FDA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
-		853237E19D1838C7E9C21D69B400B5B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
-		867A84B61EE8DB7EDE9B50859903EA4B /* Pods-Pokedex Watch AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */; };
-		90BD471D1C3B9F47EC94CBD43914A7B5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */; };
-		9617968B1057F66AD38E2ADC5A2F619B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */; };
-		A80213122285765327C143165B92EC2C /* Pods-Pokedex Watch App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0618E661B571A4FCC8B886F792E756CE /* MoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE223714BF3E4E601FD82C2839F5984 /* MoyaProvider.swift */; };
+		0C080D5202A572C8434CA8635D35B29C /* ValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B76699A84FA37432E2691D0B036208 /* ValidationType.swift */; };
+		0EA96364E99A403FB19009B589203048 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B502FFEA8AA574BB1E65F80E1BB51 /* NetworkLoggerPlugin.swift */; };
+		0F1D68554CA1AC595168E8FB4E1A6E63 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12289758590D35855D6776DD6D4C8FDB /* CachedResponseHandler.swift */; };
+		17D08F917A4BD96C08FEC13110B5614E /* Pods-Pokedex Watch App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E9EBD667C0EF5FA05A58EDF47F956C /* Pods-Pokedex Watch App-dummy.m */; };
+		22FAFA41450EC40132CF4B0EEE7E6788 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C6A1F2E6B1D23D61857C803D410ED /* ParameterEncoder.swift */; };
+		241FB0C1BD55CC6F05C7FD78590EE5A1 /* MultiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3D939A4EB2162B2FA0ED13D757EEB /* MultiTarget.swift */; };
+		2AA5064ABDA1A14FD82F98F25CF853D8 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CB4A8E94035910626D05D08848F5B /* Atomic.swift */; };
+		2B230B24827053BA3E9DA0C78A796BC2 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E68D58290A726771FFA9C6AA21681 /* ResponseSerialization.swift */; };
+		2B42D035AFF52D62722161A7772C6C08 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2859DB1230839062D82B411816C4DC5 /* HTTPHeaders.swift */; };
+		2C0A255CBEF99A364730637C50F789EB /* Pods-Pokedex Watch AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C4792788ECDF9323BEC2C5CE388833 /* Pods-Pokedex Watch AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C4C08BB733A2101D945E8C37256F78F /* UploadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949BE631EEF49F381DE864B0C30DC9F /* UploadRequest.swift */; };
+		36C78069A72BECAEB66B31FF794A09ED /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C11B9F81567B6AEDAB1471B0716F08 /* Request.swift */; };
+		375CAADA212D838EE018E292E684F61E /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CE19F7A7473E2B854AC24085949C04 /* Cancellable.swift */; };
+		39E308EFE196AA969D03B976366FDA4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */; };
+		3F24BC4D6770D35255913F2915C4AA94 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC00B186F694607CC8A8BC94169D0FEC /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */; };
+		3F66AEE4F01E690567AC8AFBC09A7563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */; };
+		4337931D8B8E3F3BA03C77C1B496BEAD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07881E02A2C82DDEC07B7CC7B2C1992 /* HTTPMethod.swift */; };
+		4F4B9DFA352D9958C7494D7BC24631D8 /* Alamofire-Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 085DBCE7DD98588B2ED103B1C1F36026 /* Alamofire-Alamofire */; };
+		5075DC82A63A9807DFC390B4CE8046CD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200362851C85AA80C261072616129418 /* Session.swift */; };
+		571142A2747CD90165F631A8AE980A0A /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9EC080F026A4F4B8C47B5EF0056B99 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5830C6260CA2B7CD6DC74054FB29CDD1 /* DownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091534146F4DF605608425ABBA9C93FD /* DownloadRequest.swift */; };
+		58E936B1E7E42C0BFC119D428B70F1D8 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190CCA5BFE068B84225362D01D8F997 /* Alamofire.swift */; };
+		5AD4E5B4118A1DC7D639F611044B4159 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D656C3B75CFEDBDFF51292AF5E6D51CF /* DataRequest.swift */; };
+		612AE0ABB9BCD3AF0E1D29B4C063CA62 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7A605A82E6D0BA36177DEF58C49FE /* StringEncoding+Alamofire.swift */; };
+		68238227D42B2511FA6A26BF71E92520 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FF7642AE5A56F6C64C7CED434385C7 /* Alamofire-dummy.m */; };
+		68995B28EE5B539CEA5A1133E4623927 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2CE4454A5868F95BEA1E27DEAF91F5 /* MultipartFormData.swift */; };
+		68A74F13F8FEBAA7E0EA9344DED0458B /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA7FD1992286650515E983CB0D0A15 /* OperationQueue+Alamofire.swift */; };
+		69261B5D3B53EBF7109D5E1DA3768CAC /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216BBCCE44D43B353F906AAC6572FED4 /* AuthenticationInterceptor.swift */; };
+		6C5571DAC14E51299671ABC2AF0E1A62 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E6A260B6FE910095A9584B9C2412 /* Plugin.swift */; };
+		6CC7E7C00730B1BF42A28B2E23CA01D6 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C9B6CB60F4DEBBCCF0D588B92E44B7 /* URLSessionConfiguration+Alamofire.swift */; };
+		6F2E0DC7D8598283D088A989FDB8E5F6 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CA54362CBC0DDB67477D7B713FBCE /* ParameterEncoding.swift */; };
+		7212ACC786B61C86DE7EBED50CC29FD5 /* MoyaProvider+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BEE0603B96676A83BE16E6EAB9047 /* MoyaProvider+Internal.swift */; };
+		72C19C762FADC82517C344E9F47D7E50 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7FEC08D26061D3A71F4A73612564B /* AlamofireExtended.swift */; };
+		76374B984BAD760575C5223FEC2C6FC1 /* MoyaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86D62531A16B9270BDBEB68436AFD5 /* MoyaError.swift */; };
+		77F109FA3951C23E7F0E7A4F5581F488 /* MoyaProvider+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F487798503FD84056789DDA089371A5 /* MoyaProvider+Defaults.swift */; };
+		794FC38D15336AB502B73B012005E9BD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978257666981C289808B1FAF9E31536F /* Validation.swift */; };
+		795681285B4E2B121B5CD420131168F8 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F540AC2C2E0CF2288AD7629818C5DF2 /* MultipartUpload.swift */; };
+		79AB21FCF882EB4FC9DD5F111C2F53D3 /* Moya-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6151AD6483A7096117843EEC13FD2F3 /* Moya-dummy.m */; };
+		7AE2E0B382A14D58BE7DAA0C852DCD02 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F928643539B671B6B3CBFFE7EEAFA80F /* ServerTrustEvaluation.swift */; };
+		7CB4D382650A1BB458B68BF3B39FE27D /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8CFED2D3F98D81087A7B89E5821E7 /* AnyEncodable.swift */; };
+		7E313C5665BD42F0877BFD2CEBBD82CE /* URL+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047F3367250C1E2163E906403121CDA /* URL+Moya.swift */; };
+		867A84B61EE8DB7EDE9B50859903EA4B /* Pods-Pokedex Watch AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1F3B148EDD935EC6F0169CD28388C /* Pods-Pokedex Watch AppTests-dummy.m */; };
+		887DB52C63E52FBD3B88F42DD8CFB421 /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE6F4FE7DA69CF14C6B028988A329D /* RequestCompression.swift */; };
+		8A7A14267160A9EACDC74A9E21B8F058 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32F716FDEE105B8CE29D67D787039B /* Image.swift */; };
+		8DD46EE7FB9503E7634E929DDE1CBA31 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6129872813E1628FEBF44662FE3D4A73 /* Notifications.swift */; };
+		90D847B19214926EDE5210D44A08F3C7 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8040444618AF2C57F8F89EE54FB615DA /* RequestTaskMap.swift */; };
+		92138A77DFEB4F76FCB582E97633896D /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B597DEDF240C078B778224D69FC7D7 /* URLRequest+Alamofire.swift */; };
+		9378157945D7B405C862A05B0D6B971B /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19ABD150974A5777C05DDEA567476CF /* Result+Alamofire.swift */; };
+		9426B0386E4DC02F4E347A457C39144A /* NetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B157CAF04FF889E7EF71835A5B529C /* NetworkActivityPlugin.swift */; };
+		95563637A4972EEA70958AC205B9D88A /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC536A08A07314F06E6838441CC308B /* TargetType.swift */; };
+		97D7D91FC818805D8344C373CC098C32 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76645E9F05012FE2D1C2FC1A97FD759C /* SessionDelegate.swift */; };
+		9930A6A180279D0493FB8DB95BF23C21 /* Moya+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F317EF15A998B0AC2C471A346BDB86 /* Moya+Alamofire.swift */; };
+		9A3537E0E6B50DE756E96CDB3AD4EDE3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5378C0581A9DC9E64A889ADF9F39B /* MultipartFormData.swift */; };
+		9C7D314BE45AB79E96B260656C36BAEC /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F608FB185F8F9AA6CC942C992E33A322 /* RedirectHandler.swift */; };
+		9D8BED7F3F86BB39E7C0923D92E73F8B /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB873948F25603662495CDA38983BB /* Combine.swift */; };
+		A1506893FF52AA466B130E8B05FBE868 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9530EFD34A9E0CF0C3ABFEB35CFBF88 /* NetworkReachabilityManager.swift */; };
+		A22A2ACF53FDC243AAAFB009005A710F /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCEC634F80FE0A4672163A099C2D48 /* Concurrency.swift */; };
+		A3FD52DF5584364FFD56965394C36CF2 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E279FDDC903175019B00C006C013DB /* URLConvertible+URLRequestConvertible.swift */; };
+		A755043CEE0384C2BB9238AF2F200F4B /* AccessTokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A679A4D60AEA7AD18A3B91DCF26B47 /* AccessTokenPlugin.swift */; };
+		AA602A49B1DC7FDED565CAD8BB89EAC1 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3434A7D782735F836822B5D721E7EE5 /* AFError.swift */; };
+		AB60B7775C160D5D62FBC93FAC8F90EC /* Moya-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C648B2454A453708055A3644D976DD /* Moya-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB95DDA1B9980EB56C092B09BF830503 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA6A6298E943BA30D642B34D1F1E56E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD40271C0B30F07489E0E50C49E61F4E /* Pods-Pokedex Watch App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C055A0D17BB7827B53EB3FACBF25B5C4 /* Pods-Pokedex Watch App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD75E7744AC7055BD537E5F9E4A098B4 /* CredentialsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA24F3011CF8AB0D51B29342A0CE5 /* CredentialsPlugin.swift */; };
+		AD8C0CA8620AD77A63A1B967AE1F4A11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */; };
+		B0EF3E2802E1715202F99325EAE0F27A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B911F537F7D7C8567F37B04255FA5BA0 /* Task.swift */; };
+		B5C66B48EB624FEC4D2F64A50F143716 /* DataStreamRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99CE36A61584F1E2EBD9C605844FA19 /* DataStreamRequest.swift */; };
+		B76161B174AEE584051FF48287922E3E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B416982062807EE325C286C8981D8B1A /* CFNetwork.framework */; };
+		BC0A0C473B63B817926F4D58611281BB /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF33C2B92A448BC6B70E3C7DC6B2DAD3 /* URLEncodedFormEncoder.swift */; };
+		BDA7D6FBEE258446282431D0719CECC1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F4BCEEDD6A85E83DCC564EC439F8473C /* PrivacyInfo.xcprivacy */; };
+		CDCA01B605A086576DBB75F8C3A24337 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F837ED3AE87E0101B86DC89D8B358A9 /* RetryPolicy.swift */; };
+		D5CFDCFE3128D6FA2A4D385FDFD42AA1 /* URLRequest+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED9A1253BECC3456006FA0185A18312 /* URLRequest+Encoding.swift */; };
+		DADAAFFCDC241D3E6A4DCF567C12D280 /* RequestTypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E63D74188BCD0D06682829DDF6744 /* RequestTypeWrapper.swift */; };
+		DE896085DFDD686BDBDEFB776F0D683A /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858CB2486B81B5B158951EED9EB730E /* DispatchQueue+Alamofire.swift */; };
+		DE8F5B68839128A005EE3549A1149B09 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E6AEB28C3BEB40BB8D1A64CE7DBF6 /* RequestInterceptor.swift */; };
+		E6ED06AC318A34F7744B32CEC759CDA9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EDDB360E5A4582836153776F273B2F /* Response.swift */; };
+		E7B06E98F3530C96FB6B2D8272169C22 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73FF062C9876FB7E6BD0676AFAD1060 /* Endpoint.swift */; };
+		F0DE532B20C7F8FD2515382D492C8DFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */; };
+		F4DD0AD58DDD5641BDEAEA6CF44FF0ED /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67ECE2FD3AB88F2ED04AEEA8D93615C /* Protected.swift */; };
+		F7E576E007A81E0EFD2E0849CB17878D /* WebSocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2750BEF21DCACFB4A252A446DC1A5F1 /* WebSocketRequest.swift */; };
+		FBBA4924C2C83A3715D6F04B1E6E64C4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6AC71966088C65F615B0F4BB2E4003 /* Response.swift */; };
+		FCE62086E1AB54A4F61EBCDBA15C1510 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C86C82596A7BEC9F0B19737E6E78F9 /* EventMonitor.swift */; };
+		FCFB6F688914EE5DD571A08E56C92739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0FE4B74FF788D09A17816DC619CC12D9 /* PBXContainerItemProxy */ = {
+		0598B451DA13073D8A919C0A3FCF066A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
 			remoteInfo = SwiftGen;
 		};
-		34F4F57FCAE07F602A17FB858150F178 /* PBXContainerItemProxy */ = {
+		29D69E450060CDEC7ED765409CC11618 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
-			remoteInfo = SwiftGen;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
 		};
-		6AA3F455F753F79B17CA0494B58A71FA /* PBXContainerItemProxy */ = {
+		3A77E390367EC999DE806F8C5CF66E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		461AA0EA169337239888B148CCEFD62D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F9141D333DA1A7BE5937F227221070;
+			remoteInfo = Moya;
+		};
+		8689A5960E3F98DAE324DC446CB6DC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		AFF7C80C25B1B7AC4749BD00FC7EF7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F9141D333DA1A7BE5937F227221070;
+			remoteInfo = Moya;
+		};
+		B518500798634DE6C906A180AA080B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 976126A1CE06DC6E162563800E1BDF14;
+			remoteInfo = "Alamofire-Alamofire";
+		};
+		C24018D69C8DD2514C64858B3BA1B66F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5D65397D6AB728B677DAD79A68F4BF71;
 			remoteInfo = "Pods-Pokedex Watch App";
 		};
+		D5F1F42BE8DF22BC39B99B391356EF9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-umbrella.h"; sourceTree = "<group>"; };
-		147890F5C9A650597802F00057FF47D7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist"; sourceTree = "<group>"; };
+		0634CDB0B26EC36DAA1877C2A3616B97 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist"; sourceTree = "<group>"; };
+		07A679A4D60AEA7AD18A3B91DCF26B47 /* AccessTokenPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenPlugin.swift; path = Sources/Moya/Plugins/AccessTokenPlugin.swift; sourceTree = "<group>"; };
+		085DBCE7DD98588B2ED103B1C1F36026 /* Alamofire-Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Alamofire-Alamofire"; path = Alamofire.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		091534146F4DF605608425ABBA9C93FD /* DownloadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadRequest.swift; path = Source/Core/DownloadRequest.swift; sourceTree = "<group>"; };
+		099E68D58290A726771FFA9C6AA21681 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/Features/ResponseSerialization.swift; sourceTree = "<group>"; };
+		09A7A605A82E6D0BA36177DEF58C49FE /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/Extensions/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		0B9EC080F026A4F4B8C47B5EF0056B99 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0F540AC2C2E0CF2288AD7629818C5DF2 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/Features/MultipartUpload.swift; sourceTree = "<group>"; };
+		1210888616EB44DE7BFD955D373FA089 /* Pods-Pokedex Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.debug.xcconfig"; sourceTree = "<group>"; };
+		12289758590D35855D6776DD6D4C8FDB /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/Features/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests"; path = Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		19133DC1D47B40126074FEFD743EDDD3 /* Pods-Pokedex Watch AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch AppTests.modulemap"; sourceTree = "<group>"; };
+		1DA6A6298E943BA30D642B34D1F1E56E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		1ED9A1253BECC3456006FA0185A18312 /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Encoding.swift"; path = "Sources/Moya/URLRequest+Encoding.swift"; sourceTree = "<group>"; };
+		1F487798503FD84056789DDA089371A5 /* MoyaProvider+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Defaults.swift"; path = "Sources/Moya/MoyaProvider+Defaults.swift"; sourceTree = "<group>"; };
+		200362851C85AA80C261072616129418 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Core/Session.swift; sourceTree = "<group>"; };
+		216BBCCE44D43B353F906AAC6572FED4 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/Features/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		24B76699A84FA37432E2691D0B036208 /* ValidationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationType.swift; path = Sources/Moya/ValidationType.swift; sourceTree = "<group>"; };
+		26FF7642AE5A56F6C64C7CED434385C7 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		295BD810402F06B4CDDBADE6EA996E91 /* Pods-Pokedex Watch AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch AppTests"; path = Pods_Pokedex_Watch_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DA19EE1C7234242A3956F909DCB65EF /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5DC5F5FF08F15D88A66BBDFD9E2D36BE /* Pods-Pokedex Watch AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch AppTests.modulemap"; sourceTree = "<group>"; };
+		295FE28166EBFD61C77ECAF389E280C9 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		2F837ED3AE87E0101B86DC89D8B358A9 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/Features/RetryPolicy.swift; sourceTree = "<group>"; };
+		34CCDECC8BFC661BDDC44212E4962DC3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		35D8CFED2D3F98D81087A7B89E5821E7 /* AnyEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyEncodable.swift; path = Sources/Moya/AnyEncodable.swift; sourceTree = "<group>"; };
+		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moya; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CD838C6F5A9DB9A98C3E25EC218BF3 /* Pods-Pokedex Watch AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-Info.plist"; sourceTree = "<group>"; };
+		39CE19F7A7473E2B854AC24085949C04 /* Cancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancellable.swift; path = Sources/Moya/Cancellable.swift; sourceTree = "<group>"; };
+		3C8E63D74188BCD0D06682829DDF6744 /* RequestTypeWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTypeWrapper.swift; path = Sources/Moya/RequestTypeWrapper.swift; sourceTree = "<group>"; };
+		3E45FD6ED0AE07D186062635D50712D5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F32F716FDEE105B8CE29D67D787039B /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Moya/Image.swift; sourceTree = "<group>"; };
+		4047F3367250C1E2163E906403121CDA /* URL+Moya.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Moya.swift"; path = "Sources/Moya/URL+Moya.swift"; sourceTree = "<group>"; };
+		417BEE0603B96676A83BE16E6EAB9047 /* MoyaProvider+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MoyaProvider+Internal.swift"; path = "Sources/Moya/MoyaProvider+Internal.swift"; sourceTree = "<group>"; };
+		4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43AC8D5629FDE1E7113F6B0571C86BA3 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
+		45BCEC634F80FE0A4672163A099C2D48 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Features/Concurrency.swift; sourceTree = "<group>"; };
+		49845FEF0E684DCDE9ECA56FE1155968 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A8A77A2D264FEE517C8BC4AECDE1880 /* Moya-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-prefix.pch"; sourceTree = "<group>"; };
+		4DB082348977F8AF113FCAE2F50C9658 /* Pods-Pokedex Watch App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pokedex Watch App-frameworks.sh"; sourceTree = "<group>"; };
+		4E638D4E87590AEDC4B5B0E90A6ECE07 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
+		4EF5EC735510D66BBB32819B775CC91C /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55B73BB32644F5F49C7CA804F9CD5798 /* Pods-Pokedex Watch App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5949BE631EEF49F381DE864B0C30DC9F /* UploadRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UploadRequest.swift; path = Source/Core/UploadRequest.swift; sourceTree = "<group>"; };
+		59B1ABAC8426D0CA58FA143AE0810969 /* Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.debug.xcconfig; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE5C0FD87AB88E64B7B95E692399DAA /* ResourceBundle-Alamofire-Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Alamofire-Alamofire-Info.plist"; sourceTree = "<group>"; };
+		6129872813E1628FEBF44662FE3D4A73 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Core/Notifications.swift; sourceTree = "<group>"; };
 		620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex Watch App"; path = Pods_Pokedex_Watch_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m"; sourceTree = "<group>"; };
-		773FD42D2B50CAC3443DD24092021072 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch AppTests-dummy.m"; sourceTree = "<group>"; };
-		AA644D485BAD2329774FA71F27B4D457 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap"; sourceTree = "<group>"; };
-		AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-dummy.m"; sourceTree = "<group>"; };
-		AF9B50EB25FA0912A81B8AEE2B385B96 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
-		BA84D6AB43AD05817F5CDAD11151CFA3 /* Pods-Pokedex Watch AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-Info.plist"; sourceTree = "<group>"; };
-		BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.debug.xcconfig"; sourceTree = "<group>"; };
-		C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch AppTests-umbrella.h"; sourceTree = "<group>"; };
-		D77CBEAB8814E20DE06299232F7EE0F1 /* Pods-Pokedex Watch App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Info.plist"; sourceTree = "<group>"; };
-		E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EC0177FA02E438918A1BCB3765F6555C /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
-		F55C55F56B670E8029DB99619BE4D50E /* Pods-Pokedex Watch App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-acknowledgements.plist"; sourceTree = "<group>"; };
-		F7DE635D003A0C3B82E1854D1563ED60 /* Pods-Pokedex Watch App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FA682F43FA31EA91F90D27AB4D4E9DC8 /* Pods-Pokedex Watch App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App.modulemap"; sourceTree = "<group>"; };
-		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
+		624CB4A8E94035910626D05D08848F5B /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Moya/Atomic.swift; sourceTree = "<group>"; };
+		637CE34C27BBA70C32F711831C44AD82 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		661FF08D7103DB08BAEA1F870D1393B1 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		68BB873948F25603662495CDA38983BB /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Features/Combine.swift; sourceTree = "<group>"; };
+		6BED4899C77F46722D017DC536811273 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6F81B7BFBFC9CE5E34E9430C76D55580 /* Pods-Pokedex Watch App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-acknowledgements.plist"; sourceTree = "<group>"; };
+		74C9B6CB60F4DEBBCCF0D588B92E44B7 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/Extensions/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		75F1F3B148EDD935EC6F0169CD28388C /* Pods-Pokedex Watch AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch AppTests-dummy.m"; sourceTree = "<group>"; };
+		76645E9F05012FE2D1C2FC1A97FD759C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/Core/SessionDelegate.swift; sourceTree = "<group>"; };
+		7820B85336B446254F484F6B85B00048 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap"; sourceTree = "<group>"; };
+		78F317EF15A998B0AC2C471A346BDB86 /* Moya+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Moya+Alamofire.swift"; path = "Sources/Moya/Moya+Alamofire.swift"; sourceTree = "<group>"; };
+		7B9C6A1F2E6B1D23D61857C803D410ED /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/Core/ParameterEncoder.swift; sourceTree = "<group>"; };
+		7EC536A08A07314F06E6838441CC308B /* TargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetType.swift; path = Sources/Moya/TargetType.swift; sourceTree = "<group>"; };
+		8040444618AF2C57F8F89EE54FB615DA /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/Core/RequestTaskMap.swift; sourceTree = "<group>"; };
+		84B99DFB0086676D2B3A5820AAA21DF8 /* Moya-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moya-Info.plist"; sourceTree = "<group>"; };
+		8D86D62531A16B9270BDBEB68436AFD5 /* MoyaError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaError.swift; path = Sources/Moya/MoyaError.swift; sourceTree = "<group>"; };
+		8EE223714BF3E4E601FD82C2839F5984 /* MoyaProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoyaProvider.swift; path = Sources/Moya/MoyaProvider.swift; sourceTree = "<group>"; };
+		90FA6C530B7D62AE8489D3827D037083 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		93D898255997743795BD18E492AB4740 /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		948A752B54F99C4BE859B62236542495 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		978257666981C289808B1FAF9E31536F /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Features/Validation.swift; sourceTree = "<group>"; };
+		98EDDB360E5A4582836153776F273B2F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Core/Response.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0CF2675F174E4AB2E8BD4F0FF5B653 /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex Watch AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0C11B9F81567B6AEDAB1471B0716F08 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Core/Request.swift; sourceTree = "<group>"; };
+		A0C648B2454A453708055A3644D976DD /* Moya-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Moya-umbrella.h"; sourceTree = "<group>"; };
+		A2750BEF21DCACFB4A252A446DC1A5F1 /* WebSocketRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketRequest.swift; path = Source/Core/WebSocketRequest.swift; sourceTree = "<group>"; };
+		A3434A7D782735F836822B5D721E7EE5 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/Core/AFError.swift; sourceTree = "<group>"; };
+		A40E6AEB28C3BEB40BB8D1A64CE7DBF6 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/Features/RequestInterceptor.swift; sourceTree = "<group>"; };
+		A473157987199F770AE111E0E5B27302 /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A73FEAE34E58A5E0ED6D56A80E00CC53 /* Pods-Pokedex Watch App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex Watch App.modulemap"; sourceTree = "<group>"; };
+		A7B157CAF04FF889E7EF71835A5B529C /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityPlugin.swift; path = Sources/Moya/Plugins/NetworkActivityPlugin.swift; sourceTree = "<group>"; };
+		A7E9EBD667C0EF5FA05A58EDF47F956C /* Pods-Pokedex Watch App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-dummy.m"; sourceTree = "<group>"; };
+		AC00B186F694607CC8A8BC94169D0FEC /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m"; sourceTree = "<group>"; };
+		B07881E02A2C82DDEC07B7CC7B2C1992 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/Core/HTTPMethod.swift; sourceTree = "<group>"; };
+		B2859DB1230839062D82B411816C4DC5 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/Core/HTTPHeaders.swift; sourceTree = "<group>"; };
+		B416982062807EE325C286C8981D8B1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B911F537F7D7C8567F37B04255FA5BA0 /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
+		BBEE6F4FE7DA69CF14C6B028988A329D /* RequestCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCompression.swift; path = Source/Features/RequestCompression.swift; sourceTree = "<group>"; };
+		C03BA24F3011CF8AB0D51B29342A0CE5 /* CredentialsPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsPlugin.swift; path = Sources/Moya/Plugins/CredentialsPlugin.swift; sourceTree = "<group>"; };
+		C055A0D17BB7827B53EB3FACBF25B5C4 /* Pods-Pokedex Watch App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch App-umbrella.h"; sourceTree = "<group>"; };
+		C2C4792788ECDF9323BEC2C5CE388833 /* Pods-Pokedex Watch AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex Watch AppTests-umbrella.h"; sourceTree = "<group>"; };
+		C6151AD6483A7096117843EEC13FD2F3 /* Moya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moya-dummy.m"; sourceTree = "<group>"; };
+		C858CB2486B81B5B158951EED9EB730E /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/Extensions/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		C9530EFD34A9E0CF0C3ABFEB35CFBF88 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/Features/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		C99CE36A61584F1E2EBD9C605844FA19 /* DataStreamRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStreamRequest.swift; path = Source/Core/DataStreamRequest.swift; sourceTree = "<group>"; };
+		C9C86C82596A7BEC9F0B19737E6E78F9 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/Features/EventMonitor.swift; sourceTree = "<group>"; };
+		D0AA7FD1992286650515E983CB0D0A15 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/Extensions/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		D2B597DEDF240C078B778224D69FC7D7 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/Extensions/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		D3E7FEC08D26061D3A71F4A73612564B /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/Features/AlamofireExtended.swift; sourceTree = "<group>"; };
+		D656C3B75CFEDBDFF51292AF5E6D51CF /* DataRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequest.swift; path = Source/Core/DataRequest.swift; sourceTree = "<group>"; };
+		D67ECE2FD3AB88F2ED04AEEA8D93615C /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Core/Protected.swift; sourceTree = "<group>"; };
+		D73FF062C9876FB7E6BD0676AFAD1060 /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Moya/Endpoint.swift; sourceTree = "<group>"; };
+		DA2CE4454A5868F95BEA1E27DEAF91F5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/Features/MultipartFormData.swift; sourceTree = "<group>"; };
+		DD7CA54362CBC0DDB67477D7B713FBCE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/Core/ParameterEncoding.swift; sourceTree = "<group>"; };
+		DF83E6A260B6FE910095A9584B9C2412 /* Plugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = Sources/Moya/Plugin.swift; sourceTree = "<group>"; };
+		E2E279FDDC903175019B00C006C013DB /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/Core/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		E3D689E0BE173F3DA148786066CAA09C /* Pods-Pokedex Watch AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex Watch AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4C60909285F01731B729836CC94AD52 /* Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.release.xcconfig; sourceTree = "<group>"; };
+		EB48EDC8D64D7DE834C40B9ADE0840E6 /* Moya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Moya.modulemap; sourceTree = "<group>"; };
+		ED6AC71966088C65F615B0F4BB2E4003 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Moya/Response.swift; sourceTree = "<group>"; };
+		ED6F7254FC3258D8DF8FC2E1EB1F5DD9 /* Pods-Pokedex Watch App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex Watch App-Info.plist"; sourceTree = "<group>"; };
+		EEE5378C0581A9DC9E64A889ADF9F39B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/Moya/MultipartFormData.swift; sourceTree = "<group>"; };
+		F190CCA5BFE068B84225362D01D8F997 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F19ABD150974A5777C05DDEA567476CF /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Extensions/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		F46B502FFEA8AA574BB1E65F80E1BB51 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkLoggerPlugin.swift; path = Sources/Moya/Plugins/NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		F4BCEEDD6A85E83DCC564EC439F8473C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Source/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F608FB185F8F9AA6CC942C992E33A322 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/Features/RedirectHandler.swift; sourceTree = "<group>"; };
+		F928643539B671B6B3CBFFE7EEAFA80F /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/Features/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		F960312BBE7F61CBA2528EE8113C9A0D /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		FDC3D939A4EB2162B2FA0ED13D757EEB /* MultiTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTarget.swift; path = Sources/Moya/MultiTarget.swift; sourceTree = "<group>"; };
+		FF33C2B92A448BC6B70E3C7DC6B2DAD3 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/Features/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7212E230C2689383A4F80905A3D145BD /* Frameworks */ = {
+		41444FC6B9FA2D386D58EF06093B5C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853237E19D1838C7E9C21D69B400B5B7 /* Foundation.framework in Frameworks */,
+				FCFB6F688914EE5DD571A08E56C92739 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76FFCFE25F8C86597AC54339F31C8B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F66AEE4F01E690567AC8AFBC09A7563 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8153D01A1C0C14499EF1D1F17FDDFF7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DE532B20C7F8FD2515382D492C8DFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C342523C3577E7122B4B43929BA8F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76161B174AEE584051FF48287922E3E /* CFNetwork.framework in Frameworks */,
+				AD8C0CA8620AD77A63A1B967AE1F4A11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,44 +335,183 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDBAD11ADFAAE17E1675193191D0490E /* Frameworks */ = {
+		CFA796E03947CAA2262A909D76FA823A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9617968B1057F66AD38E2ADC5A2F619B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08DF4A29620F30ECCD85AE71F22FD52C /* Pods */ = {
+		1479C86340C7816C93D65A879F16057F /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */,
+				B416982062807EE325C286C8981D8B1A /* CFNetwork.framework */,
+				4208B9DD0050E9B347757177B0674D96 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		147BD60A88B94798EC6796C6A6FA373A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07A679A4D60AEA7AD18A3B91DCF26B47 /* AccessTokenPlugin.swift */,
+				35D8CFED2D3F98D81087A7B89E5821E7 /* AnyEncodable.swift */,
+				624CB4A8E94035910626D05D08848F5B /* Atomic.swift */,
+				39CE19F7A7473E2B854AC24085949C04 /* Cancellable.swift */,
+				C03BA24F3011CF8AB0D51B29342A0CE5 /* CredentialsPlugin.swift */,
+				D73FF062C9876FB7E6BD0676AFAD1060 /* Endpoint.swift */,
+				3F32F716FDEE105B8CE29D67D787039B /* Image.swift */,
+				78F317EF15A998B0AC2C471A346BDB86 /* Moya+Alamofire.swift */,
+				8D86D62531A16B9270BDBEB68436AFD5 /* MoyaError.swift */,
+				8EE223714BF3E4E601FD82C2839F5984 /* MoyaProvider.swift */,
+				1F487798503FD84056789DDA089371A5 /* MoyaProvider+Defaults.swift */,
+				417BEE0603B96676A83BE16E6EAB9047 /* MoyaProvider+Internal.swift */,
+				EEE5378C0581A9DC9E64A889ADF9F39B /* MultipartFormData.swift */,
+				FDC3D939A4EB2162B2FA0ED13D757EEB /* MultiTarget.swift */,
+				A7B157CAF04FF889E7EF71835A5B529C /* NetworkActivityPlugin.swift */,
+				F46B502FFEA8AA574BB1E65F80E1BB51 /* NetworkLoggerPlugin.swift */,
+				DF83E6A260B6FE910095A9584B9C2412 /* Plugin.swift */,
+				3C8E63D74188BCD0D06682829DDF6744 /* RequestTypeWrapper.swift */,
+				ED6AC71966088C65F615B0F4BB2E4003 /* Response.swift */,
+				7EC536A08A07314F06E6838441CC308B /* TargetType.swift */,
+				B911F537F7D7C8567F37B04255FA5BA0 /* Task.swift */,
+				4047F3367250C1E2163E906403121CDA /* URL+Moya.swift */,
+				1ED9A1253BECC3456006FA0185A18312 /* URLRequest+Encoding.swift */,
+				24B76699A84FA37432E2691D0B036208 /* ValidationType.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1B1F13D731097F5A8D597F991D8C4C57 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				147BD60A88B94798EC6796C6A6FA373A /* Core */,
+				1B8A523F2734EFD67C4F54DAD946F602 /* Support Files */,
+			);
+			name = Moya;
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		1B8A523F2734EFD67C4F54DAD946F602 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB48EDC8D64D7DE834C40B9ADE0840E6 /* Moya.modulemap */,
+				C6151AD6483A7096117843EEC13FD2F3 /* Moya-dummy.m */,
+				84B99DFB0086676D2B3A5820AAA21DF8 /* Moya-Info.plist */,
+				4A8A77A2D264FEE517C8BC4AECDE1880 /* Moya-prefix.pch */,
+				A0C648B2454A453708055A3644D976DD /* Moya-umbrella.h */,
+				59B1ABAC8426D0CA58FA143AE0810969 /* Moya.debug.xcconfig */,
+				E4C60909285F01731B729836CC94AD52 /* Moya.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Moya";
+			sourceTree = "<group>";
+		};
+		36181693FE72EC1180A13593BD0BEBA1 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7820B85336B446254F484F6B85B00048 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */,
+				948A752B54F99C4BE859B62236542495 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */,
+				4EF5EC735510D66BBB32819B775CC91C /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */,
+				AC00B186F694607CC8A8BC94169D0FEC /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */,
+				6BED4899C77F46722D017DC536811273 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-frameworks.sh */,
+				0634CDB0B26EC36DAA1877C2A3616B97 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */,
+				1DA6A6298E943BA30D642B34D1F1E56E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */,
+				49845FEF0E684DCDE9ECA56FE1155968 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */,
+				3E45FD6ED0AE07D186062635D50712D5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */,
+			);
+			name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			path = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		72E91AE7E20E414EFACBB3247A27694F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCEEDD6A85E83DCC564EC439F8473C /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		939A757626D948D0804E697F27239E6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90FA6C530B7D62AE8489D3827D037083 /* Alamofire.modulemap */,
+				26FF7642AE5A56F6C64C7CED434385C7 /* Alamofire-dummy.m */,
+				F960312BBE7F61CBA2528EE8113C9A0D /* Alamofire-Info.plist */,
+				34CCDECC8BFC661BDDC44212E4962DC3 /* Alamofire-prefix.pch */,
+				0B9EC080F026A4F4B8C47B5EF0056B99 /* Alamofire-umbrella.h */,
+				295FE28166EBFD61C77ECAF389E280C9 /* Alamofire.debug.xcconfig */,
+				637CE34C27BBA70C32F711831C44AD82 /* Alamofire.release.xcconfig */,
+				5EE5C0FD87AB88E64B7B95E692399DAA /* ResourceBundle-Alamofire-Alamofire-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		9DDA8535F54EB18762E8B637FDBFBBA7 /* Pods-Pokedex Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				19133DC1D47B40126074FEFD743EDDD3 /* Pods-Pokedex Watch AppTests.modulemap */,
+				9E0CF2675F174E4AB2E8BD4F0FF5B653 /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */,
+				661FF08D7103DB08BAEA1F870D1393B1 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */,
+				75F1F3B148EDD935EC6F0169CD28388C /* Pods-Pokedex Watch AppTests-dummy.m */,
+				38CD838C6F5A9DB9A98C3E25EC218BF3 /* Pods-Pokedex Watch AppTests-Info.plist */,
+				C2C4792788ECDF9323BEC2C5CE388833 /* Pods-Pokedex Watch AppTests-umbrella.h */,
+				A473157987199F770AE111E0E5B27302 /* Pods-Pokedex Watch AppTests.debug.xcconfig */,
+				E3D689E0BE173F3DA148786066CAA09C /* Pods-Pokedex Watch AppTests.release.xcconfig */,
+			);
+			name = "Pods-Pokedex Watch AppTests";
+			path = "Target Support Files/Pods-Pokedex Watch AppTests";
+			sourceTree = "<group>";
+		};
+		B28CE43407CEAC117D2A976683A764D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1479C86340C7816C93D65A879F16057F /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C041C0DC5C06ED632EFBF968E36DE114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9742A82AB5A3C44285F216BFAE87065 /* Alamofire */,
+				1B1F13D731097F5A8D597F991D8C4C57 /* Moya */,
+				F072C79B0E91E47460A7F84A5C1F5DC9 /* SwiftGen */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		14FC0D92685540681E6F31BB5BB2A3CE /* Pods-Pokedex Watch App */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				FA682F43FA31EA91F90D27AB4D4E9DC8 /* Pods-Pokedex Watch App.modulemap */,
-				F7DE635D003A0C3B82E1854D1563ED60 /* Pods-Pokedex Watch App-acknowledgements.markdown */,
-				F55C55F56B670E8029DB99619BE4D50E /* Pods-Pokedex Watch App-acknowledgements.plist */,
-				AD0E36C458039AE9526674760907A965 /* Pods-Pokedex Watch App-dummy.m */,
-				D77CBEAB8814E20DE06299232F7EE0F1 /* Pods-Pokedex Watch App-Info.plist */,
-				10BE961A08841A0EAEE6450D3EB2E512 /* Pods-Pokedex Watch App-umbrella.h */,
-				C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */,
-				F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B28CE43407CEAC117D2A976683A764D8 /* Frameworks */,
+				C041C0DC5C06ED632EFBF968E36DE114 /* Pods */,
+				EF25DB019008EF37F154D7405FE1CE8E /* Products */,
+				D8A01BB629F2A9EEEAD10B2B753C9CF3 /* Targets Support Files */,
 			);
-			name = "Pods-Pokedex Watch App";
-			path = "Target Support Files/Pods-Pokedex Watch App";
 			sourceTree = "<group>";
 		};
-		585CCD70D47949D4A833193B7EE4B098 /* Products */ = {
+		D8A01BB629F2A9EEEAD10B2B753C9CF3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				F4EAEA7BA41E1740548C649208596030 /* Pods-Pokedex Watch App */,
+				36181693FE72EC1180A13593BD0BEBA1 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
+				9DDA8535F54EB18762E8B637FDBFBBA7 /* Pods-Pokedex Watch AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF25DB019008EF37F154D7405FE1CE8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				085DBCE7DD98588B2ED103B1C1F36026 /* Alamofire-Alamofire */,
+				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
 				620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */,
 				171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
 				295BD810402F06B4CDDBADE6EA996E91 /* Pods-Pokedex Watch AppTests */,
@@ -151,109 +519,126 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */ = {
+		F072C79B0E91E47460A7F84A5C1F5DC9 /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
-				7ABCCF16C7D65D2D01670EF82A443DE5 /* watchOS */,
+				FCC191670E23853649DE790BE85600C8 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		77C7581DA027825AF3BEB8C990477B53 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				14FC0D92685540681E6F31BB5BB2A3CE /* Pods-Pokedex Watch App */,
-				91700ECE4E485048F24CD65D99AA8D9A /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
-				BB4E5A13A8B1425A275F268A794CAE4F /* Pods-Pokedex Watch AppTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7ABCCF16C7D65D2D01670EF82A443DE5 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				46A003A25B2A7E6E95C30801E60AE0DD /* Foundation.framework */,
-			);
-			name = watchOS;
-			sourceTree = "<group>";
-		};
-		878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */ = {
-			isa = PBXGroup;
-			children = (
-				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
-			);
+			name = SwiftGen;
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
-		91700ECE4E485048F24CD65D99AA8D9A /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+		F4EAEA7BA41E1740548C649208596030 /* Pods-Pokedex Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				AA644D485BAD2329774FA71F27B4D457 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap */,
-				3DA19EE1C7234242A3956F909DCB65EF /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.markdown */,
-				773FD42D2B50CAC3443DD24092021072 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-acknowledgements.plist */,
-				65C782DB50CA1A7E08478353C5D1FC63 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m */,
-				147890F5C9A650597802F00057FF47D7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist */,
-				8D39FAA271CE3F8EC5A1ECC046DFECDB /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h */,
-				1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */,
-				3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */,
+				A73FEAE34E58A5E0ED6D56A80E00CC53 /* Pods-Pokedex Watch App.modulemap */,
+				55B73BB32644F5F49C7CA804F9CD5798 /* Pods-Pokedex Watch App-acknowledgements.markdown */,
+				6F81B7BFBFC9CE5E34E9430C76D55580 /* Pods-Pokedex Watch App-acknowledgements.plist */,
+				A7E9EBD667C0EF5FA05A58EDF47F956C /* Pods-Pokedex Watch App-dummy.m */,
+				4DB082348977F8AF113FCAE2F50C9658 /* Pods-Pokedex Watch App-frameworks.sh */,
+				ED6F7254FC3258D8DF8FC2E1EB1F5DD9 /* Pods-Pokedex Watch App-Info.plist */,
+				C055A0D17BB7827B53EB3FACBF25B5C4 /* Pods-Pokedex Watch App-umbrella.h */,
+				1210888616EB44DE7BFD955D373FA089 /* Pods-Pokedex Watch App.debug.xcconfig */,
+				93D898255997743795BD18E492AB4740 /* Pods-Pokedex Watch App.release.xcconfig */,
 			);
-			name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests";
-			path = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests";
+			name = "Pods-Pokedex Watch App";
+			path = "Target Support Files/Pods-Pokedex Watch App";
 			sourceTree = "<group>";
 		};
-		AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */ = {
+		F9742A82AB5A3C44285F216BFAE87065 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */,
-				B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */,
+				A3434A7D782735F836822B5D721E7EE5 /* AFError.swift */,
+				F190CCA5BFE068B84225362D01D8F997 /* Alamofire.swift */,
+				D3E7FEC08D26061D3A71F4A73612564B /* AlamofireExtended.swift */,
+				216BBCCE44D43B353F906AAC6572FED4 /* AuthenticationInterceptor.swift */,
+				12289758590D35855D6776DD6D4C8FDB /* CachedResponseHandler.swift */,
+				68BB873948F25603662495CDA38983BB /* Combine.swift */,
+				45BCEC634F80FE0A4672163A099C2D48 /* Concurrency.swift */,
+				D656C3B75CFEDBDFF51292AF5E6D51CF /* DataRequest.swift */,
+				C99CE36A61584F1E2EBD9C605844FA19 /* DataStreamRequest.swift */,
+				C858CB2486B81B5B158951EED9EB730E /* DispatchQueue+Alamofire.swift */,
+				091534146F4DF605608425ABBA9C93FD /* DownloadRequest.swift */,
+				C9C86C82596A7BEC9F0B19737E6E78F9 /* EventMonitor.swift */,
+				B2859DB1230839062D82B411816C4DC5 /* HTTPHeaders.swift */,
+				B07881E02A2C82DDEC07B7CC7B2C1992 /* HTTPMethod.swift */,
+				DA2CE4454A5868F95BEA1E27DEAF91F5 /* MultipartFormData.swift */,
+				0F540AC2C2E0CF2288AD7629818C5DF2 /* MultipartUpload.swift */,
+				C9530EFD34A9E0CF0C3ABFEB35CFBF88 /* NetworkReachabilityManager.swift */,
+				6129872813E1628FEBF44662FE3D4A73 /* Notifications.swift */,
+				D0AA7FD1992286650515E983CB0D0A15 /* OperationQueue+Alamofire.swift */,
+				7B9C6A1F2E6B1D23D61857C803D410ED /* ParameterEncoder.swift */,
+				DD7CA54362CBC0DDB67477D7B713FBCE /* ParameterEncoding.swift */,
+				D67ECE2FD3AB88F2ED04AEEA8D93615C /* Protected.swift */,
+				F608FB185F8F9AA6CC942C992E33A322 /* RedirectHandler.swift */,
+				A0C11B9F81567B6AEDAB1471B0716F08 /* Request.swift */,
+				BBEE6F4FE7DA69CF14C6B028988A329D /* RequestCompression.swift */,
+				A40E6AEB28C3BEB40BB8D1A64CE7DBF6 /* RequestInterceptor.swift */,
+				8040444618AF2C57F8F89EE54FB615DA /* RequestTaskMap.swift */,
+				98EDDB360E5A4582836153776F273B2F /* Response.swift */,
+				099E68D58290A726771FFA9C6AA21681 /* ResponseSerialization.swift */,
+				F19ABD150974A5777C05DDEA567476CF /* Result+Alamofire.swift */,
+				2F837ED3AE87E0101B86DC89D8B358A9 /* RetryPolicy.swift */,
+				F928643539B671B6B3CBFFE7EEAFA80F /* ServerTrustEvaluation.swift */,
+				200362851C85AA80C261072616129418 /* Session.swift */,
+				76645E9F05012FE2D1C2FC1A97FD759C /* SessionDelegate.swift */,
+				09A7A605A82E6D0BA36177DEF58C49FE /* StringEncoding+Alamofire.swift */,
+				5949BE631EEF49F381DE864B0C30DC9F /* UploadRequest.swift */,
+				E2E279FDDC903175019B00C006C013DB /* URLConvertible+URLRequestConvertible.swift */,
+				FF33C2B92A448BC6B70E3C7DC6B2DAD3 /* URLEncodedFormEncoder.swift */,
+				D2B597DEDF240C078B778224D69FC7D7 /* URLRequest+Alamofire.swift */,
+				74C9B6CB60F4DEBBCCF0D588B92E44B7 /* URLSessionConfiguration+Alamofire.swift */,
+				978257666981C289808B1FAF9E31536F /* Validation.swift */,
+				A2750BEF21DCACFB4A252A446DC1A5F1 /* WebSocketRequest.swift */,
+				72E91AE7E20E414EFACBB3247A27694F /* Resources */,
+				939A757626D948D0804E697F27239E6F /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		FCC191670E23853649DE790BE85600C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43AC8D5629FDE1E7113F6B0571C86BA3 /* SwiftGen.debug.xcconfig */,
+				4E638D4E87590AEDC4B5B0E90A6ECE07 /* SwiftGen.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftGen";
 			sourceTree = "<group>";
 		};
-		BB4E5A13A8B1425A275F268A794CAE4F /* Pods-Pokedex Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				5DC5F5FF08F15D88A66BBDFD9E2D36BE /* Pods-Pokedex Watch AppTests.modulemap */,
-				EC0177FA02E438918A1BCB3765F6555C /* Pods-Pokedex Watch AppTests-acknowledgements.markdown */,
-				AF9B50EB25FA0912A81B8AEE2B385B96 /* Pods-Pokedex Watch AppTests-acknowledgements.plist */,
-				A91ECEE34C2985EA739334236D6320F9 /* Pods-Pokedex Watch AppTests-dummy.m */,
-				BA84D6AB43AD05817F5CDAD11151CFA3 /* Pods-Pokedex Watch AppTests-Info.plist */,
-				C5D952E9966F710A0E58CC0F1C6F7D47 /* Pods-Pokedex Watch AppTests-umbrella.h */,
-				E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */,
-				BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */,
-			);
-			name = "Pods-Pokedex Watch AppTests";
-			path = "Target Support Files/Pods-Pokedex Watch AppTests";
-			sourceTree = "<group>";
-		};
-		CF1408CF629C7361332E53B88F7BD30C = {
-			isa = PBXGroup;
-			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5CF220D25288EBED6D1E3B7AEE3E8274 /* Frameworks */,
-				08DF4A29620F30ECCD85AE71F22FD52C /* Pods */,
-				585CCD70D47949D4A833193B7EE4B098 /* Products */,
-				77C7581DA027825AF3BEB8C990477B53 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7FBE2846981EB5015307768767905299 /* Headers */ = {
+		183F987D960B0BAF86F97E8493F6BED9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3099E384AB58BCB2C23E29AD492109E7 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */,
+				AB95DDA1B9980EB56C092B09BF830503 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2D1680194C96441380F1E3F686D155D /* Headers */ = {
+		410D0F27EDB13938D025BB9DBD661EB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80213122285765327C143165B92EC2C /* Pods-Pokedex Watch App-umbrella.h in Headers */,
+				AB60B7775C160D5D62FBC93FAC8F90EC /* Moya-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2BDCFECECFF7B936BE1E57FB19460A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD40271C0B30F07489E0E50C49E61F4E /* Pods-Pokedex Watch App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3F5EA19841D5A3486C9C9A020AA313 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571142A2747CD90165F631A8AE980A0A /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +653,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		17F9141D333DA1A7BE5937F227221070 /* Moya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BAF98FDA9A2155B61AAC471DB108C6 /* Build configuration list for PBXNativeTarget "Moya" */;
+			buildPhases = (
+				410D0F27EDB13938D025BB9DBD661EB4 /* Headers */,
+				0F059D90C50CD829E3DBCB5EB514E8DD /* Sources */,
+				41444FC6B9FA2D386D58EF06093B5C77 /* Frameworks */,
+				4C0F08BBDA0F701DF186D4677854849E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D0AA050406E1269A1AB4C9EA426A2D8 /* PBXTargetDependency */,
+			);
+			name = Moya;
+			productName = Moya;
+			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */;
+			productType = "com.apple.product-type.framework";
+		};
 		4E969587E27FA4DDBD5080832F0B4FBC /* Pods-Pokedex Watch AppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB2A9782226B10398D42FC5EDC39787 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch AppTests" */;
@@ -280,7 +684,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				02209DF5F535093B3BDDC7C6E6EC8593 /* PBXTargetDependency */,
+				037BD92205D7E74897BB7AC323ECBB53 /* PBXTargetDependency */,
 			);
 			name = "Pods-Pokedex Watch AppTests";
 			productName = Pods_Pokedex_Watch_AppTests;
@@ -289,40 +693,80 @@
 		};
 		5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3E03CF83FC1339276C1C46D6E217E38 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */;
+			buildConfigurationList = E5AB12F834B0C23EAA90960FBEABE031 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */;
 			buildPhases = (
-				D2D1680194C96441380F1E3F686D155D /* Headers */,
-				0D6B044016971C8FE888B595BC496CE3 /* Sources */,
-				EDBAD11ADFAAE17E1675193191D0490E /* Frameworks */,
-				9A324B88D7918FF5AD48C96545725E53 /* Resources */,
+				B2BDCFECECFF7B936BE1E57FB19460A5 /* Headers */,
+				11E5CF536E3A4542491EDF94CDB140E6 /* Sources */,
+				76FFCFE25F8C86597AC54339F31C8B1D /* Frameworks */,
+				E150BFA2302E78289106337B3CD1290A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				941721F9CB054A539E394AB1A67EBB0D /* PBXTargetDependency */,
+				3C8F982CCAD6FA95B264A728450DA336 /* PBXTargetDependency */,
+				388F9897C0F8FAB53F2F7D0427564BBD /* PBXTargetDependency */,
+				7456E87F44CA0B815FC801286A5BD90F /* PBXTargetDependency */,
 			);
 			name = "Pods-Pokedex Watch App";
 			productName = Pods_Pokedex_Watch_App;
 			productReference = 620B7E16746D5E187D7C630E3CFCA6A3 /* Pods-Pokedex Watch App */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C9930AD60479B817BE041FA58EECC07 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+		976126A1CE06DC6E162563800E1BDF14 /* Alamofire-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27E5F634866170382DEA994056053769 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */;
+			buildConfigurationList = BCF14B32FA2C60B2A06D8C8E248F3F6A /* Build configuration list for PBXNativeTarget "Alamofire-Alamofire" */;
 			buildPhases = (
-				7FBE2846981EB5015307768767905299 /* Headers */,
-				AC28191C67DD06F21A1E9322C3270FB9 /* Sources */,
-				7212E230C2689383A4F80905A3D145BD /* Frameworks */,
-				C8201F75EB2BCE26511F5A57E4D34424 /* Resources */,
+				1A6C22A4E350832FFAF4A0C5E2BD4770 /* Sources */,
+				CFA796E03947CAA2262A909D76FA823A /* Frameworks */,
+				762D5AEBEB538FD7F0C116C63E03042A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7429F17E99F1005D70CAB0ECECB354D0 /* PBXTargetDependency */,
+			);
+			name = "Alamofire-Alamofire";
+			productName = Alamofire;
+			productReference = 085DBCE7DD98588B2ED103B1C1F36026 /* Alamofire-Alamofire */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9C9930AD60479B817BE041FA58EECC07 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B9AECF93EBFB3D5D5E1EE3FA11B4A6 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */;
+			buildPhases = (
+				183F987D960B0BAF86F97E8493F6BED9 /* Headers */,
+				4F23ADA388083BFBC54A50D6413AAB20 /* Sources */,
+				8153D01A1C0C14499EF1D1F17FDDFF7E /* Frameworks */,
+				F765D15ADD3C9F5945FA4D4580D2383B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9A7FDFF188730514CC319D062B4A334 /* PBXTargetDependency */,
+				B37C254D00D92A9257784DAB2C222FA1 /* PBXTargetDependency */,
+				02CCE0BAC25873BA2F53CFC3924609BA /* PBXTargetDependency */,
 			);
 			name = "Pods-Pokedex Watch App-Pokedex Watch AppUITests";
 			productName = Pods_Pokedex_Watch_App_Pokedex_Watch_AppUITests;
 			productReference = 171765C317B55B536FC098C6238A56D3 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA92BF783257A026FB1E05B4B536DD6E /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				DB3F5EA19841D5A3486C9C9A020AA313 /* Headers */,
+				E0C6F893D34CB935A73FBD4BD75299E5 /* Sources */,
+				A5C342523C3577E7122B4B43929BA8F3 /* Frameworks */,
+				5CEFF03EE9A7B5D7514E35F3AD2A314D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17E0F89ACCF790C346F1CCB091D4A70C /* PBXTargetDependency */,
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -343,10 +787,13 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 585CCD70D47949D4A833193B7EE4B098 /* Products */;
+			productRefGroup = EF25DB019008EF37F154D7405FE1CE8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				976126A1CE06DC6E162563800E1BDF14 /* Alamofire-Alamofire */,
+				17F9141D333DA1A7BE5937F227221070 /* Moya */,
 				5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */,
 				9C9930AD60479B817BE041FA58EECC07 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests */,
 				4E969587E27FA4DDBD5080832F0B4FBC /* Pods-Pokedex Watch AppTests */,
@@ -356,10 +803,26 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9A324B88D7918FF5AD48C96545725E53 /* Resources */ = {
+		4C0F08BBDA0F701DF186D4677854849E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CEFF03EE9A7B5D7514E35F3AD2A314D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4B9DFA352D9958C7494D7BC24631D8 /* Alamofire-Alamofire in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762D5AEBEB538FD7F0C116C63E03042A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA7D6FBEE258446282431D0719CECC1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +833,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8201F75EB2BCE26511F5A57E4D34424 /* Resources */ = {
+		E150BFA2302E78289106337B3CD1290A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F765D15ADD3C9F5945FA4D4580D2383B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,11 +850,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D6B044016971C8FE888B595BC496CE3 /* Sources */ = {
+		0F059D90C50CD829E3DBCB5EB514E8DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EDA7F7FE7D54E80C44AE2B181A401FB /* Pods-Pokedex Watch App-dummy.m in Sources */,
+				A755043CEE0384C2BB9238AF2F200F4B /* AccessTokenPlugin.swift in Sources */,
+				7CB4D382650A1BB458B68BF3B39FE27D /* AnyEncodable.swift in Sources */,
+				2AA5064ABDA1A14FD82F98F25CF853D8 /* Atomic.swift in Sources */,
+				375CAADA212D838EE018E292E684F61E /* Cancellable.swift in Sources */,
+				AD75E7744AC7055BD537E5F9E4A098B4 /* CredentialsPlugin.swift in Sources */,
+				E7B06E98F3530C96FB6B2D8272169C22 /* Endpoint.swift in Sources */,
+				8A7A14267160A9EACDC74A9E21B8F058 /* Image.swift in Sources */,
+				9930A6A180279D0493FB8DB95BF23C21 /* Moya+Alamofire.swift in Sources */,
+				79AB21FCF882EB4FC9DD5F111C2F53D3 /* Moya-dummy.m in Sources */,
+				76374B984BAD760575C5223FEC2C6FC1 /* MoyaError.swift in Sources */,
+				0618E661B571A4FCC8B886F792E756CE /* MoyaProvider.swift in Sources */,
+				77F109FA3951C23E7F0E7A4F5581F488 /* MoyaProvider+Defaults.swift in Sources */,
+				7212ACC786B61C86DE7EBED50CC29FD5 /* MoyaProvider+Internal.swift in Sources */,
+				9A3537E0E6B50DE756E96CDB3AD4EDE3 /* MultipartFormData.swift in Sources */,
+				241FB0C1BD55CC6F05C7FD78590EE5A1 /* MultiTarget.swift in Sources */,
+				9426B0386E4DC02F4E347A457C39144A /* NetworkActivityPlugin.swift in Sources */,
+				0EA96364E99A403FB19009B589203048 /* NetworkLoggerPlugin.swift in Sources */,
+				6C5571DAC14E51299671ABC2AF0E1A62 /* Plugin.swift in Sources */,
+				DADAAFFCDC241D3E6A4DCF567C12D280 /* RequestTypeWrapper.swift in Sources */,
+				FBBA4924C2C83A3715D6F04B1E6E64C4 /* Response.swift in Sources */,
+				95563637A4972EEA70958AC205B9D88A /* TargetType.swift in Sources */,
+				B0EF3E2802E1715202F99325EAE0F27A /* Task.swift in Sources */,
+				7E313C5665BD42F0877BFD2CEBBD82CE /* URL+Moya.swift in Sources */,
+				D5CFDCFE3128D6FA2A4D385FDFD42AA1 /* URLRequest+Encoding.swift in Sources */,
+				0C080D5202A572C8434CA8635D35B29C /* ValidationType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E5CF536E3A4542491EDF94CDB140E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D08F917A4BD96C08FEC13110B5614E /* Pods-Pokedex Watch App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6C22A4E350832FFAF4A0C5E2BD4770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F23ADA388083BFBC54A50D6413AAB20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24BC4D6770D35255913F2915C4AA94 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,41 +913,119 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC28191C67DD06F21A1E9322C3270FB9 /* Sources */ = {
+		E0C6F893D34CB935A73FBD4BD75299E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BD471D1C3B9F47EC94CBD43914A7B5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests-dummy.m in Sources */,
+				AA602A49B1DC7FDED565CAD8BB89EAC1 /* AFError.swift in Sources */,
+				58E936B1E7E42C0BFC119D428B70F1D8 /* Alamofire.swift in Sources */,
+				68238227D42B2511FA6A26BF71E92520 /* Alamofire-dummy.m in Sources */,
+				72C19C762FADC82517C344E9F47D7E50 /* AlamofireExtended.swift in Sources */,
+				69261B5D3B53EBF7109D5E1DA3768CAC /* AuthenticationInterceptor.swift in Sources */,
+				0F1D68554CA1AC595168E8FB4E1A6E63 /* CachedResponseHandler.swift in Sources */,
+				9D8BED7F3F86BB39E7C0923D92E73F8B /* Combine.swift in Sources */,
+				A22A2ACF53FDC243AAAFB009005A710F /* Concurrency.swift in Sources */,
+				5AD4E5B4118A1DC7D639F611044B4159 /* DataRequest.swift in Sources */,
+				B5C66B48EB624FEC4D2F64A50F143716 /* DataStreamRequest.swift in Sources */,
+				DE896085DFDD686BDBDEFB776F0D683A /* DispatchQueue+Alamofire.swift in Sources */,
+				5830C6260CA2B7CD6DC74054FB29CDD1 /* DownloadRequest.swift in Sources */,
+				FCE62086E1AB54A4F61EBCDBA15C1510 /* EventMonitor.swift in Sources */,
+				2B42D035AFF52D62722161A7772C6C08 /* HTTPHeaders.swift in Sources */,
+				4337931D8B8E3F3BA03C77C1B496BEAD /* HTTPMethod.swift in Sources */,
+				68995B28EE5B539CEA5A1133E4623927 /* MultipartFormData.swift in Sources */,
+				795681285B4E2B121B5CD420131168F8 /* MultipartUpload.swift in Sources */,
+				A1506893FF52AA466B130E8B05FBE868 /* NetworkReachabilityManager.swift in Sources */,
+				8DD46EE7FB9503E7634E929DDE1CBA31 /* Notifications.swift in Sources */,
+				68A74F13F8FEBAA7E0EA9344DED0458B /* OperationQueue+Alamofire.swift in Sources */,
+				22FAFA41450EC40132CF4B0EEE7E6788 /* ParameterEncoder.swift in Sources */,
+				6F2E0DC7D8598283D088A989FDB8E5F6 /* ParameterEncoding.swift in Sources */,
+				F4DD0AD58DDD5641BDEAEA6CF44FF0ED /* Protected.swift in Sources */,
+				9C7D314BE45AB79E96B260656C36BAEC /* RedirectHandler.swift in Sources */,
+				36C78069A72BECAEB66B31FF794A09ED /* Request.swift in Sources */,
+				887DB52C63E52FBD3B88F42DD8CFB421 /* RequestCompression.swift in Sources */,
+				DE8F5B68839128A005EE3549A1149B09 /* RequestInterceptor.swift in Sources */,
+				90D847B19214926EDE5210D44A08F3C7 /* RequestTaskMap.swift in Sources */,
+				E6ED06AC318A34F7744B32CEC759CDA9 /* Response.swift in Sources */,
+				2B230B24827053BA3E9DA0C78A796BC2 /* ResponseSerialization.swift in Sources */,
+				9378157945D7B405C862A05B0D6B971B /* Result+Alamofire.swift in Sources */,
+				CDCA01B605A086576DBB75F8C3A24337 /* RetryPolicy.swift in Sources */,
+				7AE2E0B382A14D58BE7DAA0C852DCD02 /* ServerTrustEvaluation.swift in Sources */,
+				5075DC82A63A9807DFC390B4CE8046CD /* Session.swift in Sources */,
+				97D7D91FC818805D8344C373CC098C32 /* SessionDelegate.swift in Sources */,
+				612AE0ABB9BCD3AF0E1D29B4C063CA62 /* StringEncoding+Alamofire.swift in Sources */,
+				2C4C08BB733A2101D945E8C37256F78F /* UploadRequest.swift in Sources */,
+				A3FD52DF5584364FFD56965394C36CF2 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				BC0A0C473B63B817926F4D58611281BB /* URLEncodedFormEncoder.swift in Sources */,
+				92138A77DFEB4F76FCB582E97633896D /* URLRequest+Alamofire.swift in Sources */,
+				6CC7E7C00730B1BF42A28B2E23CA01D6 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				794FC38D15336AB502B73B012005E9BD /* Validation.swift in Sources */,
+				F7E576E007A81E0EFD2E0849CB17878D /* WebSocketRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02209DF5F535093B3BDDC7C6E6EC8593 /* PBXTargetDependency */ = {
+		02CCE0BAC25873BA2F53CFC3924609BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = D5F1F42BE8DF22BC39B99B391356EF9A /* PBXContainerItemProxy */;
+		};
+		037BD92205D7E74897BB7AC323ECBB53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Pokedex Watch App";
 			target = 5D65397D6AB728B677DAD79A68F4BF71 /* Pods-Pokedex Watch App */;
-			targetProxy = 6AA3F455F753F79B17CA0494B58A71FA /* PBXContainerItemProxy */;
+			targetProxy = C24018D69C8DD2514C64858B3BA1B66F /* PBXContainerItemProxy */;
 		};
-		7429F17E99F1005D70CAB0ECECB354D0 /* PBXTargetDependency */ = {
+		17E0F89ACCF790C346F1CCB091D4A70C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-Alamofire";
+			target = 976126A1CE06DC6E162563800E1BDF14 /* Alamofire-Alamofire */;
+			targetProxy = B518500798634DE6C906A180AA080B13 /* PBXContainerItemProxy */;
+		};
+		388F9897C0F8FAB53F2F7D0427564BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
+			targetProxy = 461AA0EA169337239888B148CCEFD62D /* PBXContainerItemProxy */;
+		};
+		3C8F982CCAD6FA95B264A728450DA336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 8689A5960E3F98DAE324DC446CB6DC20 /* PBXContainerItemProxy */;
+		};
+		7456E87F44CA0B815FC801286A5BD90F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftGen;
 			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
-			targetProxy = 34F4F57FCAE07F602A17FB858150F178 /* PBXContainerItemProxy */;
+			targetProxy = 0598B451DA13073D8A919C0A3FCF066A /* PBXContainerItemProxy */;
 		};
-		941721F9CB054A539E394AB1A67EBB0D /* PBXTargetDependency */ = {
+		7D0AA050406E1269A1AB4C9EA426A2D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftGen;
-			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
-			targetProxy = 0FE4B74FF788D09A17816DC619CC12D9 /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 29D69E450060CDEC7ED765409CC11618 /* PBXContainerItemProxy */;
+		};
+		A9A7FDFF188730514CC319D062B4A334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 3A77E390367EC999DE806F8C5CF66E2E /* PBXContainerItemProxy */;
+		};
+		B37C254D00D92A9257784DAB2C222FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moya;
+			target = 17F9141D333DA1A7BE5937F227221070 /* Moya */;
+			targetProxy = AFF7C80C25B1B7AC4749BD00FC7EF7CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BBA00529C804E6592F84716BA138511 /* Debug */ = {
+		0D57A2964E561E5D856A073D5E4D2AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7831568751A67D589C3C692EEB29150 /* Pods-Pokedex Watch AppTests.debug.xcconfig */;
+			baseConfigurationReference = 3E45FD6ED0AE07D186062635D50712D5 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -442,7 +1037,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +1045,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -459,15 +1054,16 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
-			name = Debug;
+			name = Release;
 		};
 		472E833EA6BAF581F60492B34323B140 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */;
+			baseConfigurationReference = 4E638D4E87590AEDC4B5B0E90A6ECE07 /* SwiftGen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,86 +1071,28 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		557FE2B27ADCEB4B21493E6950D757C8 /* Debug */ = {
+		4C74F7E09DBAC1B3A8C21EF5B55EDDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1AAE2003E078FE63BEFC0C5E6E81D67 /* Pods-Pokedex Watch App.debug.xcconfig */;
+			baseConfigurationReference = 295FE28166EBFD61C77ECAF389E280C9 /* Alamofire.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Alamofire";
+				IBSC_MODULE = Alamofire;
+				INFOPLIST_FILE = "Target Support Files/Alamofire/ResourceBundle-Alamofire-Alamofire-Info.plist";
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		64C567037E29EB062BF295CAC69E65DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3000F7D0A4384DCE1FB25EAA81BEA18 /* Pods-Pokedex Watch App.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
-			};
-			name = Release;
-		};
-		6A2E3C1168CD16EA706BBA0EE8BAA6BC /* Release */ = {
+		4C9C9B96A01F0A3C737ABE2658EFD5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -612,26 +1150,79 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		56DACAC8F0878A96734767243454EE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637CE34C27BBA70C32F711831C44AD82 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Alamofire";
+				IBSC_MODULE = Alamofire;
+				INFOPLIST_FILE = "Target Support Files/Alamofire/ResourceBundle-Alamofire-Alamofire-Info.plist";
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
 		78BA53369992E89B87412EA1C13FCD9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */;
+			baseConfigurationReference = 43AC8D5629FDE1E7113F6B0571C86BA3 /* SwiftGen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		C209306350D9658373CDED92E7CF9361 /* Release */ = {
+		79E8EF5C352E61D3DD28C30125936665 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E1030379CBF303EA99BCF59DEC42A5E /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.release.xcconfig */;
+			baseConfigurationReference = E4C60909285F01731B729836CC94AD52 /* Moya.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Moya/Moya-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Moya/Moya-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Moya/Moya.modulemap";
+				PRODUCT_MODULE_NAME = Moya;
+				PRODUCT_NAME = Moya;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		8FE3CFF6AFC0E69A0D04532647299AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D898255997743795BD18E492AB4740 /* Pods-Pokedex Watch App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -643,7 +1234,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,7 +1242,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -663,13 +1254,13 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Release;
 		};
-		D35E46BC5E09ED4F34D25BE0608F1F90 /* Debug */ = {
+		924CA1C08870204DB4F4EE4168F4DAD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EA79DF0497589239C015D2B988D1789 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */;
+			baseConfigurationReference = 49845FEF0E684DCDE9ECA56FE1155968 /* Pods-Pokedex Watch App-Pokedex Watch AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -700,13 +1291,84 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Debug;
 		};
-		DE03FE0DA446CF9612BF037D66186020 /* Release */ = {
+		92E9027CE9D32805B97659BD8321961C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDF987B28188666C4A33C95074E2CA46 /* Pods-Pokedex Watch AppTests.release.xcconfig */;
+			baseConfigurationReference = 59B1ABAC8426D0CA58FA143AE0810969 /* Moya.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Moya/Moya-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Moya/Moya-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Moya/Moya.modulemap";
+				PRODUCT_MODULE_NAME = Moya;
+				PRODUCT_NAME = Moya;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		AAF9A61D94913B3516B0064CC517B485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637CE34C27BBA70C32F711831C44AD82 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		B157AFF2106B38FBB8E470198297F6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D689E0BE173F3DA148786066CAA09C /* Pods-Pokedex Watch AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -738,11 +1400,120 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Release;
 		};
-		E0E4F65333F78A6570174C95D6232560 /* Debug */ = {
+		C929979D8B331716508EE6D66CFE6F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1210888616EB44DE7BFD955D373FA089 /* Pods-Pokedex Watch App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D42BD576714934EBDAA22D6E048589F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A473157987199F770AE111E0E5B27302 /* Pods-Pokedex Watch AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E243D97659AADBE098A9D4521BC3EA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 295FE28166EBFD61C77ECAF389E280C9 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		FEB492D6B636A773D0752FA4590E0617 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -804,18 +1575,27 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27E5F634866170382DEA994056053769 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */ = {
+		01B9AECF93EBFB3D5D5E1EE3FA11B4A6 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App-Pokedex Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D35E46BC5E09ED4F34D25BE0608F1F90 /* Debug */,
-				C209306350D9658373CDED92E7CF9361 /* Release */,
+				924CA1C08870204DB4F4EE4168F4DAD1 /* Debug */,
+				0D57A2964E561E5D856A073D5E4D2AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01BAF98FDA9A2155B61AAC471DB108C6 /* Build configuration list for PBXNativeTarget "Moya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E9027CE9D32805B97659BD8321961C /* Debug */,
+				79E8EF5C352E61D3DD28C30125936665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -823,8 +1603,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0E4F65333F78A6570174C95D6232560 /* Debug */,
-				6A2E3C1168CD16EA706BBA0EE8BAA6BC /* Release */,
+				FEB492D6B636A773D0752FA4590E0617 /* Debug */,
+				4C9C9B96A01F0A3C737ABE2658EFD5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -832,17 +1612,35 @@
 		9FB2A9782226B10398D42FC5EDC39787 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BBA00529C804E6592F84716BA138511 /* Debug */,
-				DE03FE0DA446CF9612BF037D66186020 /* Release */,
+				D42BD576714934EBDAA22D6E048589F9 /* Debug */,
+				B157AFF2106B38FBB8E470198297F6FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3E03CF83FC1339276C1C46D6E217E38 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */ = {
+		BCF14B32FA2C60B2A06D8C8E248F3F6A /* Build configuration list for PBXNativeTarget "Alamofire-Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				557FE2B27ADCEB4B21493E6950D757C8 /* Debug */,
-				64C567037E29EB062BF295CAC69E65DF /* Release */,
+				4C74F7E09DBAC1B3A8C21EF5B55EDDB4 /* Debug */,
+				56DACAC8F0878A96734767243454EE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AB12F834B0C23EAA90960FBEABE031 /* Build configuration list for PBXNativeTarget "Pods-Pokedex Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C929979D8B331716508EE6D66CFE6F47 /* Debug */,
+				8FE3CFF6AFC0E69A0D04532647299AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA92BF783257A026FB1E05B4B536DD6E /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E243D97659AADBE098A9D4521BC3EA56 /* Debug */,
+				AAF9A61D94913B3516B0064CC517B485 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

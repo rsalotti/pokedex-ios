@@ -7,6 +7,7 @@ target 'Pokedex Watch App' do
 
   # Pods for Pokedex Watch App
   pod 'SwiftGen', '~> 6.0'
+  pod 'Moya'
     
   target 'Pokedex Watch AppTests' do
     inherit! :search_paths

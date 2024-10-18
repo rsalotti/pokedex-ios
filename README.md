@@ -61,6 +61,10 @@ Through the development of this project, the following key concepts were reinfor
 
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
+## Screens
+![Captura de Tela 2024-08-27 às 21 46 08](https://github.com/user-attachments/assets/409ca4bf-43e8-4a79-a96b-5ae350c9b977)
+
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
