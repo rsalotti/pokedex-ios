@@ -12,31 +12,40 @@ struct PokemonDetailView: View {
     
     var body: some View {
         TabView {
-            ScrollView {
-                VStack {
-                    Image.getPokemonKantoImage(for: viewModel.pokemon?.id ?? 1)
+            LazyVStack {
+                if let pokemon = viewModel.pokemon {
+                    Image.getPokemonKantoImage(for: pokemon.id)
                         .resizable()
-                        .frame(width: 85, height: 85, alignment: .center)
-                    Text(viewModel.pokemon?.name.capitalizedFirstLetter() ?? "Unknown")
-                        .font(.title2)
-                        .bold()
-                    if let pokemon = viewModel.pokemon {
-                        generateTypeViews(pokemon)
-                    }
+                        .scaledToFit()
+                        .frame(width: 85)
+                    PKMTypeView(pokemon)
+                } else {
+                    Text("No Pokémon data available")
                 }
             }
-            
+            .padding()
             Text("Lorem ipsum")
         }
+        .navigationTitle(viewModel.pokemon?.name.capitalizedFirstLetter() ?? "Loading...")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
-    func generateTypeViews(_ pokemon: Pokemon) -> some View {
-        HStack(spacing: -10) {
+    @ViewBuilder
+    func PKMTypeView(_ pokemon: Pokemon) -> some View {
+        LazyHStack(spacing: 0) {
             ForEach(pokemon.types, id: \.self) { element in
                 element.type.name.image
                     .resizable()
                     .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
             }
+        }
+    }
+    
+    @ViewBuilder
+    func PKMDetails(_ pokemon: Pokemon) -> some View {
+        LazyVStack {
+            
         }
     }
 }

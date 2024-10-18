@@ -19,7 +19,7 @@ class PokemonDetailViewModel: ObservableObject {
     @Published var idPokemon: Int
     @Published var pokemon: Pokemon?
     
-    init(idPokemon: Int = 1) {
+    init(idPokemon: Int) {
         self.idPokemon = idPokemon
         self.pokemon = nil
         
