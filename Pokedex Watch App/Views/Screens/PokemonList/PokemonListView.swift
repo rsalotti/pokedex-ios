@@ -12,19 +12,31 @@ struct PokemonListView: View {
     let region: Int = 2
     let regionName: String = "Kanto"
     @StateObject var viewModel = PokemonListViewModel()
+    @State var isLoading: Bool = true
     
     var body: some View {
         NavigationView {
-            List(viewModel.getPokemons()) { pokemon in
-                let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
-                NavigationLink(destination: destination) {
-                    PKMRowView(pokemon)
+            ZStack {
+                List(viewModel.getPokemons()) { pokemon in
+                    let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
+                    NavigationLink(destination: destination) {
+                        PKMRowView(pokemon)
+                    }
+                }
+                .navigationTitle(regionName)
+                if isLoading {
+                    List {
+                        SkeletonCellView()
+                        SkeletonCellView()
+                        SkeletonCellView()
+                        SkeletonCellView()
+                    }
                 }
             }
-            .navigationTitle(regionName)
             .onAppear {
                 Task {
                     await viewModel.fetchRegionPokemons(by: region)
+                    isLoading = false
                 }
             }
         }

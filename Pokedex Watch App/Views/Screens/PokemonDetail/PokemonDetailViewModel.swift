@@ -41,3 +41,36 @@ class PokemonDetailViewModel: ObservableObject {
         }
     }
 }
+
+/* Exemplo usando COMBINE
+import Combine
+
+@MainActor
+class PokemonDetailViewModel: ObservableObject {
+    @Published var idPokemon: Int
+    @Published var pokemon: Pokemon?
+    
+    private var cancellables = Set<AnyCancellable>()
+    
+    init(idPokemon: Int) {
+        self.idPokemon = idPokemon
+        self.pokemon = nil
+        
+        fetchPokemonDetail()
+    }
+    
+    func fetchPokemonDetail() {
+        PokeRepository().fetchSinglePokemon(id: idPokemon)
+            .receive(on: DispatchQueue.main) // Garante que as atualizações de UI ocorram na thread principal
+            .catch { error in
+                // Tratar erro, talvez retornar um valor padrão ou um Pokemon nulo
+                print(error.localizedDescription)
+                return Just(nil) // Retorna um publisher que emite um valor nulo
+            }
+            .assign(to: &$pokemon) // Atribui o resultado à propriedade pokemon
+    }
+}
+*/
+
+
+
