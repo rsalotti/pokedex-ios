@@ -18,6 +18,7 @@ struct PokemonDetailView: View {
                     PKMTypeView(pokemon)
                     PKMDetailView(pokemon)
                 }
+                PKMStatsView(pokemon)
             } else {
                 ProgressView()
             }
@@ -27,7 +28,6 @@ struct PokemonDetailView: View {
                     .font(.system(size: 15, weight: .regular))
             }
             
-            Text("Tela com os Status")
         }
         .navigationTitle(viewModel.pokemon?.name.capitalizedFirstLetter() ?? "Loading...")
         .navigationBarTitleDisplayMode(.inline)
@@ -57,13 +57,13 @@ struct PokemonDetailView: View {
     func PKMDetailView(_ pokemon: Pokemon) -> some View {
         LazyHStack(spacing: 8) {
             VStack(alignment: .leading) {
-                Text("Altura")
+                Text("Height")
                     .font(.system(size: 11, weight: .semibold))
                 Text(viewModel.getHeightDescription())
                     .font(.system(size: 11, weight: .light))
             }
             VStack(alignment: .leading) {
-                Text("Peso")
+                Text("Weight")
                     .font(.system(size: 11, weight: .semibold))
                 Text(viewModel.getWeightDescription())
                     .font(.system(size: 11, weight: .light))
@@ -72,15 +72,16 @@ struct PokemonDetailView: View {
     }
     
     @ViewBuilder
-    func PKMAboutView(_ pokemon: Pokemon) -> some View {
-        LazyHStack {
-            
-        }
-    }
-    
-    @ViewBuilder
     func PKMStatsView(_ pokemon: Pokemon) -> some View {
-        
+        LazyVStack(alignment: .leading, spacing: 1) {
+            ProgressBarView(title: "HP", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "hp"})?.baseStat ?? 0))
+            ProgressBarView(title: "Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "attack"})?.baseStat ?? 0))
+            ProgressBarView(title: "Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "defense"})?.baseStat ?? 0))
+            ProgressBarView(title: "S.Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-attack"})?.baseStat ?? 0))
+            ProgressBarView(title: "S.Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-defense"})?.baseStat ?? 0))
+            ProgressBarView(title: "Speed", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "speed"})?.baseStat ?? 0))
+        }
+        .padding(20)
     }
     
 }

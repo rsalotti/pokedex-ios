@@ -11,11 +11,11 @@ class PokemonListViewModel: ObservableObject {
     @Published var pokedex: Pokedex? = nil
     
     var regionNumber: Int {
-        return 2
+        return 1
     }
     
     var regionTitle: String {
-        return "Kanto"
+        return ""
     }
     
     init(pokedex: Pokedex? = nil) {

@@ -33,6 +33,7 @@
 		1FE027FA2C7F448300415E7B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE027F92C7F448300415E7B /* Pokemon.swift */; };
 		84A14158188AA8B23BB62ED8 /* Pods_Pokedex_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5100EC560C86768305A3E35D /* Pods_Pokedex_Watch_App.framework */; };
 		ED4C5B022DF90D11008E506B /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C5B012DF90D0D008E506B /* PokemonSpecies.swift */; };
+		ED4C5B042DF9BCCC008E506B /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C5B032DF9BCCC008E506B /* ProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		E51246867D0B423F78F2E0DA /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App.release.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		EB7916F88C20D180F21D350E /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED4C5B012DF90D0D008E506B /* PokemonSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
+		ED4C5B032DF9BCCC008E506B /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 		1F6AD05A2CC7D73200B17BFA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ED4C5B032DF9BCCC008E506B /* ProgressBarView.swift */,
 				1F6AD05B2CC7D75800B17BFA /* SkeletonCellView.swift */,
 			);
 			path = Components;
@@ -634,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F19DBFF2C7D3267008E289B /* Pokedex.swift in Sources */,
+				ED4C5B042DF9BCCC008E506B /* ProgressBarView.swift in Sources */,
 				1F1391692C7E9E4100872F68 /* String+Extension.swift in Sources */,
 				1FDDEEBC2C7645A3003E7D08 /* PokedexApp.swift in Sources */,
 				1FABD0182C7645CB00A1FC97 /* PokemonListView.swift in Sources */,
