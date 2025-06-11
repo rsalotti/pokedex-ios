@@ -74,12 +74,12 @@ struct PokemonDetailView: View {
     @ViewBuilder
     func PKMStatsView(_ pokemon: Pokemon) -> some View {
         LazyVStack(alignment: .leading, spacing: 1) {
-            ProgressBarView(title: "HP", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "hp"})?.baseStat ?? 0))
-            ProgressBarView(title: "Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "attack"})?.baseStat ?? 0))
-            ProgressBarView(title: "Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "defense"})?.baseStat ?? 0))
-            ProgressBarView(title: "S.Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-attack"})?.baseStat ?? 0))
-            ProgressBarView(title: "S.Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-defense"})?.baseStat ?? 0))
-            ProgressBarView(title: "Speed", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "speed"})?.baseStat ?? 0))
+            ProgressBarView(title: "HP", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "hp"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
+            ProgressBarView(title: "Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "attack"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
+            ProgressBarView(title: "Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "defense"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
+            ProgressBarView(title: "S.Attack", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-attack"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
+            ProgressBarView(title: "S.Defense", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "special-defense"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
+            ProgressBarView(title: "Speed", value: CGFloat(pokemon.stats.first(where: {$0.stat.name == "speed"})?.baseStat ?? 0), barColor: pokemon.types.first?.type.name.color ?? .bug)
         }
         .padding(20)
     }

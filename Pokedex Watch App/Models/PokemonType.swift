@@ -49,4 +49,27 @@ enum PokemonType: String, Codable, Hashable {
         case .Water: return Asset.water.swiftUIImage
         }
     }
+    
+    var color: Color {
+        switch self {
+        case .Bug: return Asset.bugColor.swiftUIColor
+        case .Dark: return Asset.darkColor.swiftUIColor
+        case .Dragon: return Asset.dragonColor.swiftUIColor
+        case .Electric: return Asset.electricColor.swiftUIColor
+        case .Fairy: return Asset.fairyColor.swiftUIColor
+        case .Fight: return Asset.fightColor.swiftUIColor
+        case .Fire: return Asset.fireColor.swiftUIColor
+        case .Flying: return Asset.flyingColor.swiftUIColor
+        case .Ghost: return Asset.ghostColor.swiftUIColor
+        case .Grass: return Asset.grassColor.swiftUIColor
+        case .Ground: return Asset.groundColor.swiftUIColor
+        case .Ice: return Asset.iceColor.swiftUIColor
+        case .Normal: return Asset.normalColor.swiftUIColor
+        case .Poison: return Asset.poisonColor.swiftUIColor
+        case .Psychic: return Asset.psychicColor.swiftUIColor
+        case .Rock: return Asset.rockColor.swiftUIColor
+        case .Steel: return Asset.steelColor.swiftUIColor
+        case .Water: return Asset.waterColor.swiftUIColor
+        }
+    }
 }
