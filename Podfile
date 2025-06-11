@@ -6,6 +6,7 @@ target 'Pokedex Watch App' do
   use_frameworks!
 
   # Pods for Pokedex Watch App
+  pod 'Kingfisher', '~> 8.0'
   pod 'SwiftGen', '~> 6.0'
   pod 'Moya'
     

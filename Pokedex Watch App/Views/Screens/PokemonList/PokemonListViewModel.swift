@@ -10,6 +10,20 @@ import Foundation
 class PokemonListViewModel: ObservableObject {
     @Published var pokedex: Pokedex? = nil
     
+    var regionNumber: Int {
+        return 2
+    }
+    
+    var regionTitle: String {
+        return "Kanto"
+    }
+    
+    init(pokedex: Pokedex? = nil) {
+        Task {
+            await fetchRegionPokemons(by: regionNumber)
+        }
+    }
+    
     func fetchRegionPokemons(by region: Int) async {
         do {
             let pokedex = try await PokeRepository().fetchRegionPokemons(id: region)

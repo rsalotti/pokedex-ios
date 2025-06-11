@@ -32,6 +32,7 @@
 		1FDDEEBC2C7645A3003E7D08 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDEEBA2C7645A3003E7D08 /* PokedexApp.swift */; };
 		1FE027FA2C7F448300415E7B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE027F92C7F448300415E7B /* Pokemon.swift */; };
 		84A14158188AA8B23BB62ED8 /* Pods_Pokedex_Watch_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5100EC560C86768305A3E35D /* Pods_Pokedex_Watch_App.framework */; };
+		ED4C5B022DF90D11008E506B /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C5B012DF90D0D008E506B /* PokemonSpecies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		DAB4448787D800DF19039602 /* Pods-Pokedex Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 		E51246867D0B423F78F2E0DA /* Pods-Pokedex Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch App.release.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App.release.xcconfig"; sourceTree = "<group>"; };
 		EB7916F88C20D180F21D350E /* Pods-Pokedex Watch AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex Watch AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex Watch AppTests/Pods-Pokedex Watch AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4C5B012DF90D0D008E506B /* PokemonSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				1F19DBFE2C7D3267008E289B /* Pokedex.swift */,
 				1FE027F92C7F448300415E7B /* Pokemon.swift */,
+				ED4C5B012DF90D0D008E506B /* PokemonSpecies.swift */,
 				1F5D57192C81FF5400FA533B /* PokemonType.swift */,
 			);
 			path = Models;
@@ -304,6 +307,7 @@
 		1FF78F282C7CCC2E00592A54 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ED6CF0582DF8DEB80092364F /* PokemonHome */,
 				1F19DBF02C7CE26E008E289B /* PokemonDetail */,
 				1FF78F292C7CCC3B00592A54 /* PokemonList */,
 			);
@@ -327,6 +331,13 @@
 				5A7AA681EFFB2A111AF5B4B2 /* Pods_Pokedex_Watch_AppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED6CF0582DF8DEB80092364F /* PokemonHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PokemonHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,9 +570,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pokedex Watch App-Pokedex Watch AppUITests/Pods-Pokedex Watch App-Pokedex Watch AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,9 +591,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Pokedex Watch App/Pods-Pokedex Watch App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -625,6 +644,7 @@
 				1F6AD05C2CC7D76000B17BFA /* SkeletonCellView.swift in Sources */,
 				1F13916B2C7E9ED800872F68 /* Image+Extension.swift in Sources */,
 				1FE027FA2C7F448300415E7B /* Pokemon.swift in Sources */,
+				ED4C5B022DF90D11008E506B /* PokemonSpecies.swift in Sources */,
 				1F19DC012C7D333B008E289B /* PokeRepository.swift in Sources */,
 				1F6AD05E2CC7E39400B17BFA /* BlinkViewModifier.swift in Sources */,
 				1F7729C52C7F721600265B2D /* PokemonDetailViewModel.swift in Sources */,
@@ -794,7 +814,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = J4M3U924JV;
+				DEVELOPMENT_TEAM = R3RA5C52BF;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -826,7 +846,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokedex Watch App/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = J4M3U924JV;
+				DEVELOPMENT_TEAM = R3RA5C52BF;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -856,7 +876,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4M3U924JV;
+				DEVELOPMENT_TEAM = R3RA5C52BF;
 				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosalotti.Pokedex;
@@ -872,7 +892,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4M3U924JV;
+				DEVELOPMENT_TEAM = R3RA5C52BF;
 				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosalotti.Pokedex;

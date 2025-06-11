@@ -18,14 +18,17 @@ import SwiftUI
 class PokemonDetailViewModel: ObservableObject {
     @Published var idPokemon: Int
     @Published var pokemon: Pokemon?
+    @Published var pokemonSpecies: PokemonSpecies?
     
     init(idPokemon: Int) {
         self.idPokemon = idPokemon
         self.pokemon = nil
+        self.pokemonSpecies = nil
         
         //Tarefa Async logo após iniciar todas as variáveis.
         Task {
             await fetchPokemonDetail()
+            await fetchPokemonSpecies()
         }
     }
     
@@ -39,6 +42,30 @@ class PokemonDetailViewModel: ObservableObject {
             // FIXME: - Corrigir caso dê algum problema
             print(error.localizedDescription)
         }
+    }
+    
+    func fetchPokemonSpecies() async {
+        do {
+            let specie = try await PokeRepository().fetchSinglePokemonSpecies(id: idPokemon)
+            DispatchQueue.main.async {
+                self.pokemonSpecies = specie
+            }
+        } catch let error {
+            // FIXME: - Corrigir caso dê algum problema
+            print(error.localizedDescription)
+        }
+    }
+    
+    func getWeightDescription() -> String {
+        guard let pokemon = pokemon else { return "" }
+        let weightInKilos = Double(pokemon.weight) / 10.0
+        return String(format: "%.1f kg", weightInKilos)
+    }
+    
+    func getHeightDescription() -> String {
+        guard let pokemon = pokemon else { return "" }
+        let heightInMeters = Double(pokemon.height) / 10.0
+        return String(format: "%.1f m", heightInMeters)
     }
 }
 

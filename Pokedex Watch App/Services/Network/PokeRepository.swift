@@ -24,4 +24,10 @@ class PokeRepository: Network<PokeAPI>, PokeRepositoryProtocol {
         let route = PokeAPI.getPokemon(id: id)
         return try await execute(route: route)
     }
+    
+    @discardableResult
+    func fetchSinglePokemonSpecies(id: Int) async throws -> PokemonSpecies {
+        let route = PokeAPI.getPokemonSpecies(id: id)
+        return try await execute(route: route)
+    }
 }

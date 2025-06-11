@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct SkeletonCellView: View {
-    let primaryColor = Color(.init(gray: 0.8, alpha: 1.0))
+    let primaryColor = Color.gray
     
     var body: some View {
         HStack(alignment: .center, spacing: 16) {

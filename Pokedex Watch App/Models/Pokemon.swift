@@ -15,6 +15,7 @@ struct Pokemon: Codable {
     let order: Int
     let stats: [Stat]
     let types: [TypeElement]
+    let sprites: Sprites
     ///Weight está em Hectograma
     let weight: Int
 
@@ -25,6 +26,7 @@ struct Pokemon: Codable {
         case order
         case stats
         case types
+        case sprites
         case weight
     }
 }
@@ -53,4 +55,12 @@ struct TypeElement: Codable, Hashable {
 struct TypeDetail: Codable, Hashable {
     let name: PokemonType
     let url: String
+}
+
+struct Sprites: Codable {
+    let frontDefault: String
+    
+    enum CodingKeys: String, CodingKey {
+        case frontDefault = "front_default"
+    }
 }

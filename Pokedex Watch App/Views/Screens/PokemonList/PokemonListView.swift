@@ -6,11 +6,9 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct PokemonListView: View {
-    //Region of Pokemons '2' is the Kanto
-    let region: Int = 2
-    let regionName: String = "Kanto"
     @StateObject var viewModel = PokemonListViewModel()
     @State var isLoading: Bool = true
     
@@ -23,21 +21,7 @@ struct PokemonListView: View {
                         PKMRowView(pokemon)
                     }
                 }
-                .navigationTitle(regionName)
-                if isLoading {
-                    List {
-                        SkeletonCellView()
-                        SkeletonCellView()
-                        SkeletonCellView()
-                        SkeletonCellView()
-                    }
-                }
-            }
-            .onAppear {
-                Task {
-                    await viewModel.fetchRegionPokemons(by: region)
-                    isLoading = false
-                }
+                .navigationTitle(viewModel.regionTitle)
             }
         }
     }
@@ -45,13 +29,18 @@ struct PokemonListView: View {
     @ViewBuilder
     func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {
         HStack {
-            Image.getPokemonKantoImage(for: pokemon.id)
+            KFImage(URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(pokemon.id).png"))
                 .resizable()
-                .frame(width: 40, height: 40, alignment: .center)
+                .frame(width: 50, height: 50, alignment: .center)
                 .padding(.trailing, 8)
             Text(pokemon.pokemonSpecies.name.capitalizedFirstLetter())
                 .font(.title3)
                 .lineLimit(1)
         }
     }
+}
+
+#Preview {
+    PokemonListView(viewModel: PokemonListViewModel(),
+                    isLoading: true)
 }
