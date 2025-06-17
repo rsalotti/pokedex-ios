@@ -1,5 +1,5 @@
 //
-//  PokemonListViewModel.swift
+//  PokemonHomeViewModel.swift
 //  Pokedex Watch App
 //
 //  Created by Ricardo Santos on 27/08/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PokemonListViewModel: ObservableObject {
+class PokemonHomeViewModel: ObservableObject {
     @Published var pokedex: Pokedex? = nil
     
     var regionNumber: Int {

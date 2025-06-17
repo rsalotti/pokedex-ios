@@ -1,5 +1,5 @@
 //
-//  PokemonListView.swift
+//  PokemonHomeView.swift
 //  Pokedex Watch App
 //
 //  Created by Ricardo Santos on 13/08/24.
@@ -8,12 +8,12 @@
 import SwiftUI
 import Kingfisher
 
-struct PokemonListView: View {
-    @StateObject var viewModel = PokemonListViewModel()
+struct PokemonHomeView: View {
+    @StateObject var viewModel = PokemonHomeViewModel()
     @State var isLoading: Bool = true
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 List(viewModel.getPokemons()) { pokemon in
                     let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
@@ -22,9 +22,17 @@ struct PokemonListView: View {
                     }
                 }
                 .navigationTitle(viewModel.regionTitle)
+                .toolbar {
+                    ToolbarItemGroup(placement: .topBarTrailing) {
+                        Button(action: {
+                            print("Tipos tapped")
+                        }) {
+                            Image(systemName: "list.bullet")
+                        }
+                    }
+                }
             }
-        }
-    }
+        }    }
     
     @ViewBuilder
     func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {
@@ -41,6 +49,6 @@ struct PokemonListView: View {
 }
 
 #Preview {
-    PokemonListView(viewModel: PokemonListViewModel(),
+    PokemonHomeView(viewModel: PokemonHomeViewModel(),
                     isLoading: true)
 }
