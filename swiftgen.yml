@@ -1,11 +1,11 @@
-input_dir: Pokedex Watch App/Resources
+input_dir: Pokedex Watch App/Resources/
 output_dir: Pokedex Watch App/Resources/Generated/
 
-#strings:
-#  inputs: Localizable.strings
-#  outputs:
-#    - templateName: structured-swift4
-#      output: Strings.swift
+strings:
+  inputs: en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: Strings.swift
 
 xcassets:
   - inputs: Assets.xcassets

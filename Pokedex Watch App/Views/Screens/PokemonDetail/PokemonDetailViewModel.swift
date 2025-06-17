@@ -27,12 +27,12 @@ class PokemonDetailViewModel: ObservableObject {
         )
     }
 
-    var statHPValue: CGFloat { statValues["hp"] ?? 0 }
-    var statAttackValue: CGFloat { statValues["attack"] ?? 0 }
-    var statDefenseValue: CGFloat { statValues["defense"] ?? 0 }
-    var statSAttackValue: CGFloat { statValues["special-attack"] ?? 0}
-    var statSDefenseValue: CGFloat { statValues["special-defense"] ?? 0}
-    var statSpeedValue: CGFloat { statValues["speed"] ?? 0}
+    var statHPValue: CGFloat { statValues[L10n.Key.hp] ?? 0 }
+    var statAttackValue: CGFloat { statValues[L10n.Key.attack] ?? 0 }
+    var statDefenseValue: CGFloat { statValues[L10n.Key.defense] ?? 0 }
+    var statSAttackValue: CGFloat { statValues[L10n.Key.specialAttack] ?? 0}
+    var statSDefenseValue: CGFloat { statValues[L10n.Key.specialDefense] ?? 0}
+    var statSpeedValue: CGFloat { statValues[L10n.Key.speed] ?? 0}
 
     var barColor: Color {
         guard let barColor = pokemon?.types.first?.type.name.color else { return .bug }
@@ -77,46 +77,14 @@ class PokemonDetailViewModel: ObservableObject {
     
     func getWeightDescription() -> String {
         guard let pokemon = pokemon else { return "" }
-        let weightInKilos = Double(pokemon.weight) / 10.0
-        return String(format: "%.1f kg", weightInKilos)
+        let weightInKilos = Float(pokemon.weight) / 10.0
+        return L10n.Format.weight(weightInKilos)
     }
     
     func getHeightDescription() -> String {
         guard let pokemon = pokemon else { return "" }
-        let heightInMeters = Double(pokemon.height) / 10.0
-        return String(format: "%.1f m", heightInMeters)
+        let heightInMeters = Float(pokemon.height) / 10.0
+        return L10n.Format.height(heightInMeters)
     }
 }
-
-/* Exemplo usando COMBINE
-import Combine
-
-@MainActor
-class PokemonDetailViewModel: ObservableObject {
-    @Published var idPokemon: Int
-    @Published var pokemon: Pokemon?
-    
-    private var cancellables = Set<AnyCancellable>()
-    
-    init(idPokemon: Int) {
-        self.idPokemon = idPokemon
-        self.pokemon = nil
-        
-        fetchPokemonDetail()
-    }
-    
-    func fetchPokemonDetail() {
-        PokeRepository().fetchSinglePokemon(id: idPokemon)
-            .receive(on: DispatchQueue.main) // Garante que as atualizações de UI ocorram na thread principal
-            .catch { error in
-                // Tratar erro, talvez retornar um valor padrão ou um Pokemon nulo
-                print(error.localizedDescription)
-                return Just(nil) // Retorna um publisher que emite um valor nulo
-            }
-            .assign(to: &$pokemon) // Atribui o resultado à propriedade pokemon
-    }
-}
-*/
-
-
 

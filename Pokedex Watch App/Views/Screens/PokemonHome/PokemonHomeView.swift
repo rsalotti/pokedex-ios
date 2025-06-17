@@ -37,7 +37,7 @@ struct PokemonHomeView: View {
     @ViewBuilder
     func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {
         HStack {
-            KFImage(URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(pokemon.id).png"))
+            KFImage(URL(string: L10n.Sprite.url(pokemon.id)))
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.trailing, 8)
