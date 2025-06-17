@@ -11,6 +11,7 @@ struct Pokemon: Codable {
     ///Height está em Decimetro
     let height: Int
     let id: Int
+    let baseExperience: Int
     let name: String
     let order: Int
     let stats: [Stat]
@@ -22,6 +23,7 @@ struct Pokemon: Codable {
     enum CodingKeys: String, CodingKey {
         case height
         case id
+        case baseExperience = "base_experience"
         case name
         case order
         case stats

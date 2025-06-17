@@ -20,6 +20,25 @@ class PokemonDetailViewModel: ObservableObject {
     @Published var pokemon: Pokemon?
     @Published var pokemonSpecies: PokemonSpecies?
     
+    private var statValues: [String: CGFloat] {
+        guard let pokemon else { return [:] }
+        return Dictionary(uniqueKeysWithValues:
+            pokemon.stats.map { ($0.stat.name, CGFloat($0.baseStat)) }
+        )
+    }
+
+    var statHPValue: CGFloat { statValues["hp"] ?? 0 }
+    var statAttackValue: CGFloat { statValues["attack"] ?? 0 }
+    var statDefenseValue: CGFloat { statValues["defense"] ?? 0 }
+    var statSAttackValue: CGFloat { statValues["special-attack"] ?? 0}
+    var statSDefenseValue: CGFloat { statValues["special-defense"] ?? 0}
+    var statSpeedValue: CGFloat { statValues["speed"] ?? 0}
+
+    var barColor: Color {
+        guard let barColor = pokemon?.types.first?.type.name.color else { return .bug }
+        return barColor
+    }
+    
     init(idPokemon: Int) {
         self.idPokemon = idPokemon
         self.pokemon = nil
