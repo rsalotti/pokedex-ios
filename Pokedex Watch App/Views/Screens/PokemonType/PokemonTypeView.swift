@@ -7,29 +7,22 @@
 
 import SwiftUI
 
-struct CircleIconView: View {
+struct CircleTypeIconView: View {
     let icon: TypeIcon
     
     var body: some View {
-        Image(systemName: icon.systemName)
+        icon.typeImage
             .resizable()
-            .foregroundColor(.white)
-            .frame(width: 20, height: 20)
-            .padding(8)
-            .background(Circle().fill(icon.color))
+            .frame(width: 40, height: 40)
     }
 }
 
 struct TypeIcon {
-    let systemName: String // Substitua por nome da imagem correta
-    let color: Color
+    let typeImage: Image
     
-    static let all: [TypeIcon] = [
-        .init(systemName: "bolt.fill", color: .yellow),
-        .init(systemName: "flame.fill", color: .orange),
-        .init(systemName: "drop.fill", color: .blue),
-        // Adicione os outros tipos aqui
-    ]
+    static let all: [TypeIcon] = PokemonType.allCases.map { type in
+            .init(typeImage: type.image)
+    }
 }
 
 struct PokemonTypeView_Previews: PreviewProvider {
@@ -43,35 +36,52 @@ struct PokemonTypeView_Previews: PreviewProvider {
 
 struct PokemonTypeView: View {
     let typeIcons: [TypeIcon] = TypeIcon.all
-    
+    @State private var selectedIndex: Int = 0
+    @State private var selectedTypeIcon: Image = Image("Bug")
+    @FocusState private var isCrownFocused: Bool
+    @State private var crownRotation: Double = 0.0
+
     var body: some View {
         ZStack {
-            // Ícones ao redor em círculo
-            ForEach(0..<typeIcons.count, id: \.self) { index in
-                let angle = Angle(degrees: Double(index) / Double(typeIcons.count) * 360)
-                CircleIconView(icon: typeIcons[index])
-                    .shadow(color: .white.opacity(0.3), radius: 4)
-                    .offset(x: CGFloat(cos(angle.radians)) * 80,
-                            y: CGFloat(sin(angle.radians)) * 80)
-            }
-            
-            VStack(spacing: 8) {
-                // Ícone central
-                Image(systemName: "leaf.fill")
-                    .resizable()
-                    .foregroundColor(.white)
-                    .frame(width: 40, height: 40)
-                    .padding(20)
-                    .background(Circle().fill(Color.green))
-                    .overlay(Circle().stroke(Color.white.opacity(0.2), lineWidth: 2))
-                
-                Text("Grass")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                .padding(.bottom, 10)
+            circleTypesView
+            selectedTypeIcon
+                .resizable()
+                .frame(width: 120, height: 120)
+                .onTapGesture {
+                    print("Tapped Icon Center")
+                }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.black.opacity(0.85))
+        .focusable(true)
+        .focused($isCrownFocused)
+        .digitalCrownRotation($crownRotation, from: 0, through: Double(typeIcons.count - 1), by: 1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
+        .onChange(of: crownRotation) { newValue in
+            let newIndex = Int(round(newValue)) % typeIcons.count
+            if newIndex != selectedIndex {
+                selectedIndex = newIndex
+                selectedTypeIcon = typeIcons[newIndex].typeImage
             }
         }
-        .frame(width: 180, height: 180)
-        .background(Color.black.opacity(0.85))
+    }
+
+    @ViewBuilder
+    private var circleTypesView: some View {
+        ForEach(0..<typeIcons.count, id: \.self) { index in
+            let angle = Angle(degrees: Double(index) / Double(typeIcons.count) * 360)
+            
+            CircleTypeIconView(icon: typeIcons[index])
+                .overlay(
+                    Circle()
+                        .stroke(Color.white, lineWidth: selectedIndex == index ? 1 : 0)
+                        .frame(width: 29, height: 29)
+                )
+                .onTapGesture {
+                    selectedIndex = index
+                    selectedTypeIcon = typeIcons[index].typeImage
+                }
+                .offset(x: CGFloat(cos(angle.radians)) * 86,
+                        y: CGFloat(sin(angle.radians)) * 88)
+        }
     }
 }

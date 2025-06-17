@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum PokemonType: String, Codable, Hashable {
+enum PokemonType: String, Codable, Hashable, CaseIterable {
     case Bug = "bug"
     case Dark = "dark"
     case Dragon = "dragon"
