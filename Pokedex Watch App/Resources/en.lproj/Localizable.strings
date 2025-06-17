@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Pokedex
+
+  Created by Ricardo Salotti on 17/06/25.
+  
+*/
+
+//Dictionary Keys
+"key.hp" = "hp";
+"key.attack" = "attack";
+"key.defense" = "defense";
+"key.special-attack" = "special-attack";
+"key.special-defense" = "special-defense";
+"key.speed" = "speed";
+"key.en" = "en";
+
+// Commons
+"common.loading" = "Loading...";
+"common.height" = "Height";
+"common.weight" = "Weight";
+"common.baseLevel" = "Base Lv.";
+"common.element" = "$1";
+
+//Stats
+"pokemon.hp" = "HP";
+"pokemon.attack" = "Attack";
+"pokemon.defense" = "Defense";
+"pokemon.sattack" = "S.Attack";
+"pokemon.sdefense" = "S.Defense";
+"pokemon.speed" = "Speed";
+
+//Formats
+"format.weight" = "%.1f kg";
+"format.height" = "%.1f m";
+
+// Pokemon UrlSprite
+"sprite.url" = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$1.png";

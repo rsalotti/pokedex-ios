@@ -32,7 +32,7 @@ struct PokemonDetailView: View {
             }
             
         }
-        .navigationTitle(viewModel.pokemon?.name.capitalizedFirstLetter() ?? "Loading...")
+        .navigationTitle(viewModel.pokemon?.name.capitalizedFirstLetter() ?? L10n.Common.loading)
         .navigationBarTitleDisplayMode(.inline)
     }
     
@@ -60,19 +60,19 @@ struct PokemonDetailView: View {
     func PKMDetailView(_ pokemon: Pokemon) -> some View {
         LazyHStack(spacing: 8) {
             VStack(alignment: .leading) {
-                Text("Height")
+                Text(L10n.Common.height)
                     .font(.system(size: 11, weight: .semibold))
                 Text(viewModel.getHeightDescription())
                     .font(.system(size: 11, weight: .light))
             }
             VStack(alignment: .leading) {
-                Text("Weight")
+                Text(L10n.Common.weight)
                     .font(.system(size: 11, weight: .semibold))
                 Text(viewModel.getWeightDescription())
                     .font(.system(size: 11, weight: .light))
             }
             VStack(alignment: .leading) {
-                Text("Base Lv.")
+                Text(L10n.Common.baseLevel)
                     .font(.system(size: 11, weight: .semibold))
                 Text("\(pokemon.baseExperience)")
                     .font(.system(size: 11, weight: .light))
@@ -83,12 +83,12 @@ struct PokemonDetailView: View {
     @ViewBuilder
     func PKMStatsView(_ pokemon: Pokemon) -> some View {
         LazyVStack(alignment: .leading, spacing: 1) {
-            ProgressBarView(title: "HP", value: viewModel.statHPValue, barColor: viewModel.barColor)
-            ProgressBarView(title: "Attack", value: viewModel.statAttackValue, barColor: viewModel.barColor)
-            ProgressBarView(title: "Defense", value: viewModel.statDefenseValue, barColor: viewModel.barColor)
-            ProgressBarView(title: "S.Attack", value: viewModel.statSAttackValue, barColor: viewModel.barColor)
-            ProgressBarView(title: "S.Defense", value: viewModel.statSDefenseValue, barColor: viewModel.barColor)
-            ProgressBarView(title: "Speed", value: viewModel.statSpeedValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.hp, value: viewModel.statHPValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.attack, value: viewModel.statAttackValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.defense, value: viewModel.statDefenseValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.sattack, value: viewModel.statSAttackValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.sdefense, value: viewModel.statSDefenseValue, barColor: viewModel.barColor)
+            ProgressBarView(title: L10n.Pokemon.speed, value: viewModel.statSpeedValue, barColor: viewModel.barColor)
         }
         .padding(20)
     }

@@ -21,7 +21,6 @@ struct PokemonHomeView: View {
                         PKMRowView(pokemon)
                     }
                 }
-                .navigationTitle(viewModel.regionTitle)
                 .toolbar {
                     ToolbarItemGroup(placement: .topBarTrailing) {
                         Button(action: {
@@ -37,7 +36,8 @@ struct PokemonHomeView: View {
     @ViewBuilder
     func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {
         HStack {
-            KFImage(URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(pokemon.id).png"))
+            let url = L10n.Sprite.url.replacingOccurrences(of: L10n.Common.element, with: String(pokemon.id))
+            KFImage(URL(string: url))
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.trailing, 8)

@@ -15,7 +15,7 @@ class PokemonHomeViewModel: ObservableObject {
     }
     
     var regionTitle: String {
-        return ""
+        return "National"
     }
     
     init(pokedex: Pokedex? = nil) {
