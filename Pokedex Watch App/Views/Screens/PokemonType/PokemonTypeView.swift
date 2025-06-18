@@ -29,7 +29,6 @@ struct PokemonTypeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             PokemonTypeView()
-                .previewDevice("Apple Watch Series 7 - 45mm")
         }
     }
 }

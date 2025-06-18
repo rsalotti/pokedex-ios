@@ -5,6 +5,7 @@
 //  Created by Ricardo Santos on 26/08/24.
 //
 
+import Foundation
 import Moya
 
 open class Network<T:TargetType> {
