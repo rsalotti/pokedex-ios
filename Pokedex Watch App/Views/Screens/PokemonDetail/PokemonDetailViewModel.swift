@@ -46,17 +46,17 @@ class PokemonDetailViewModel: ObservableObject {
         
         //Tarefa Async logo após iniciar todas as variáveis.
         Task {
-            await fetchPokemonDetail()
-            await fetchPokemonSpecies()
+            async let detail: () = fetchPokemonDetail()
+            async let species: () = fetchPokemonSpecies()
+            //O Await espera as 2 chamadas acima serem finalizadas.
+            _ = await (detail, species)
         }
     }
     
     func fetchPokemonDetail() async {
         do {
             let pokemon = try await PokeRepository().fetchSinglePokemon(id: idPokemon)
-            DispatchQueue.main.async {
-                self.pokemon = pokemon
-            }
+            self.pokemon = pokemon
         } catch let error {
             // FIXME: - Corrigir caso dê algum problema
             print(error.localizedDescription)
@@ -66,9 +66,7 @@ class PokemonDetailViewModel: ObservableObject {
     func fetchPokemonSpecies() async {
         do {
             let specie = try await PokeRepository().fetchSinglePokemonSpecies(id: idPokemon)
-            DispatchQueue.main.async {
-                self.pokemonSpecies = specie
-            }
+            self.pokemonSpecies = specie
         } catch let error {
             // FIXME: - Corrigir caso dê algum problema
             print(error.localizedDescription)
@@ -87,4 +85,3 @@ class PokemonDetailViewModel: ObservableObject {
         return L10n.Format.height(heightInMeters)
     }
 }
-
