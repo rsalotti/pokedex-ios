@@ -7,39 +7,50 @@
 
 import Foundation
 
+@MainActor
 class PokemonHomeViewModel: ObservableObject {
-    @Published var pokedex: Pokedex? = nil
+    @Published var allPokemons: Pokedex?
+    var allPokedexRegions: PokedexRegion?
     
-    var regionNumber: Int {
-        return 1
-    }
-    
-    var regionTitle: String {
-        return "National"
-    }
-    
-    init(pokedex: Pokedex? = nil) {
+    init() {
+        //Tarefa Async logo após iniciar todas as variáveis.
         Task {
-            await fetchRegionPokemons(by: regionNumber)
+            async let pokemons: () = fetchAllPokemons()
+            async let allPokedexRegions: () = fetchAllPokedexRegions()
+            // O Await espera as 2 chamadas acima serem finalizadas.
+            _ = await (pokemons, allPokedexRegions)
         }
     }
     
-    func fetchRegionPokemons(by region: Int) async {
+    /**
+     All Public Methods
+     */
+    func getPokemons() -> [PKDPokemonEntry] {
+        guard let pokemonEntries = allPokemons?.pokemonEntries else {
+            return []
+        }
+        return pokemonEntries
+    }
+    
+    /**
+     All Private Methods
+     */
+    private func fetchAllPokemons() async {
         do {
-            let pokedex = try await PokeRepository().fetchRegionPokemons(id: region)
-            DispatchQueue.main.async {
-                self.pokedex = pokedex
-            }
+            ///All Pokemons in National Pokedex 1025 Entries
+            let national: Int = 1
+            self.allPokemons = try await PokeRepository().fetchRegionPokemons(id: national)
         } catch let error {
             //TODO: - Resolver o problema caso dê erro.
             print(error.localizedDescription)
         }
     }
     
-    func getPokemons() -> [PKDPokemonEntry] {
-        guard let pokemonEntries = pokedex?.pokemonEntries else {
-            return []
+    private func fetchAllPokedexRegions() async {
+        do {
+            self.allPokedexRegions = try await PokeRepository().fetchAllPokedexRegions()
+        } catch let error {
+            print(error.localizedDescription)
         }
-        return pokemonEntries
     }
 }

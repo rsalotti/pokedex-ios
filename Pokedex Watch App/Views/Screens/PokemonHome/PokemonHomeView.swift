@@ -10,7 +10,6 @@ import Kingfisher
 
 struct PokemonHomeView: View {
     @StateObject var viewModel = PokemonHomeViewModel()
-    @State var isLoading: Bool = true
     
     var body: some View {
         NavigationStack {
@@ -24,7 +23,7 @@ struct PokemonHomeView: View {
                 .toolbar {
                     ToolbarItemGroup(placement: .topBarTrailing) {
                         Button(action: {
-                            print("Tipos tapped")
+                            print("Filter tapped", viewModel.allPokedexRegions?.results.count)
                         }) {
                             Image(systemName: "list.bullet")
                         }
@@ -49,6 +48,5 @@ struct PokemonHomeView: View {
 }
 
 #Preview {
-    PokemonHomeView(viewModel: PokemonHomeViewModel(),
-                    isLoading: true)
+    PokemonHomeView(viewModel: PokemonHomeViewModel())
 }
