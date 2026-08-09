@@ -10,6 +10,7 @@ import Kingfisher
 
 struct PokemonHomeView: View {
     @StateObject var viewModel = PokemonHomeViewModel()
+    @State var showFilter: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -23,14 +24,22 @@ struct PokemonHomeView: View {
                 .toolbar {
                     ToolbarItemGroup(placement: .topBarTrailing) {
                         Button(action: {
-                            print("Filter tapped", viewModel.allPokedexRegions?.results.count)
+                            showFilter.toggle()
                         }) {
                             Image(systemName: "list.bullet")
                         }
                     }
                 }
+                .fullScreenCover(isPresented: $showFilter) {
+                    
+                } content: {
+                    PokemonTypeView()
+                }
+
+
             }
-        }    }
+        }
+    }
     
     @ViewBuilder
     func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {

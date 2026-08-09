@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 @MainActor
 class PokemonHomeViewModel: ObservableObject {
     @Published var allPokemons: Pokedex?
+    
     var allPokedexRegions: PokedexRegion?
     
     init() {
