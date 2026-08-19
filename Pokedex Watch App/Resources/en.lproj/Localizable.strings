@@ -7,12 +7,7 @@
 */
 
 //Dictionary Keys
-"key.hp" = "hp";
-"key.attack" = "attack";
-"key.defense" = "defense";
-"key.special-attack" = "special-attack";
-"key.special-defense" = "special-defense";
-"key.speed" = "speed";
+//As chaves de stat viraram `PokemonStatKind`, que já carrega os nomes usados pela API.
 "key.en" = "en";
 
 // Commons
@@ -21,6 +16,16 @@
 "common.weight" = "Weight";
 "common.baseLevel" = "Base Lv.";
 "common.element" = "$1";
+"common.retry" = "Retry";
+"common.allTypes" = "All types";
+
+//Errors
+"error.loadFailed" = "Couldn't load the Pokédex.";
+"error.emptyFilter" = "No Pokémon found for this type.";
+
+//Filter
+"filter.title" = "Filter by type";
+"filter.clear" = "Show all Pokémon";
 
 //Stats
 "pokemon.hp" = "HP";

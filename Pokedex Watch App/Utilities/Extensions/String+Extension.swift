@@ -19,4 +19,12 @@ extension String {
         // Retorna a string com a primeira letra maiúscula
         return firstLetter + remainingString
     }
+
+    /// Extrai o id final de uma URL de recurso da PokéAPI.
+    /// Ex: `https://pokeapi.co/api/v2/pokemon/25/` -> `25`
+    var pokeAPIResourceID: Int? {
+        // O split ignora as barras vazias, então o último componente é sempre o id.
+        guard let lastComponent = self.split(separator: "/").last else { return nil }
+        return Int(lastComponent)
+    }
 }

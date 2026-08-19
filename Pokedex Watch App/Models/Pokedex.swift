@@ -7,50 +7,21 @@
 
 import Foundation
 
-struct Pokedex: Codable {
-    let descriptions: [PKDDescription]
+///Model final da Pokédex, já pronto para a UI. Quem monta é o `PokedexMapper`.
+struct Pokedex {
     let id: Int
+    let name: String
     let isMainSeries: Bool
-    let name: String
-    let names: [PKDName]
-    let pokemonEntries: [PKDPokemonEntry]
-    
-    enum CodingKeys: String, CodingKey {
-        case descriptions
-        case id
-        case isMainSeries = "is_main_series"
-        case name
-        case names
-        case pokemonEntries = "pokemon_entries"
-    }
+    ///Descrição já resolvida para o idioma pedido no mapper.
+    let description: String?
+    let entries: [PokedexEntry]
 }
 
-struct PKDDescription: Codable {
-    let description: String
-    let language: PKDLanguage
-}
-
-struct PKDLanguage: Codable {
-    let name: String
-    let url: String
-}
-
-struct PKDName: Codable {
-    let language: PKDLanguage
-    let name: String
-}
-
-struct PKDPokemonEntry: Codable, Identifiable {
+///Uma linha da lista da Home.
+struct PokedexEntry: Identifiable, Hashable {
+    ///Número na Pokédex Nacional.
     let id: Int
-    let pokemonSpecies: PKDPokemonSpecies
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "entry_number"
-        case pokemonSpecies = "pokemon_species"
-    }
-}
-
-struct PKDPokemonSpecies: Codable {
     let name: String
-    let url: String
+    let displayName: String
+    let spriteURL: URL?
 }

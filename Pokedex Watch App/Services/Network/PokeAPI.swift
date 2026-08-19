@@ -14,6 +14,7 @@ enum PokeAPI {
     case getPokemons(region: Int)
     case getPokemon(id: Int)
     case getPokemonSpecies(id: Int)
+    case getPokemonsOfType(name: String)
 }
 
 extension PokeAPI: TargetType {
@@ -33,16 +34,19 @@ extension PokeAPI: TargetType {
             return "/pokemon-species/\(id)/"
         case .getAllPokedexRegions:
             return "/pokedex/"
+        case .getPokemonsOfType(let name):
+            return "/type/\(name)/"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case    .getRegions,
                 .getAllPokedexRegions,
                 .getPokemons(_),
                 .getPokemon(_),
-                .getPokemonSpecies(_):
+                .getPokemonSpecies(_),
+                .getPokemonsOfType(_):
             return .get
         }
     }

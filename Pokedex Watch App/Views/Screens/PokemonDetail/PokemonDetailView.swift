@@ -10,7 +10,7 @@ import Kingfisher
 
 struct PokemonDetailView: View {
     @StateObject var viewModel: PokemonDetailViewModel
-    
+
     var body: some View {
         TabView {
             if let pokemon = viewModel.pokemon {
@@ -18,44 +18,63 @@ struct PokemonDetailView: View {
                     PKMTypeView(pokemon)
                     PKMDetailView(pokemon)
                 }
-                PKMStatsView(pokemon)
+                PKMStatsView()
+
+                if let description = viewModel.description {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        Text(description)
+                            .font(.system(size: 15, weight: .regular))
+                    }
+                    .padding(.vertical, 4)
+                }
+            } else if viewModel.state == .failed {
+                errorView
             } else {
                 ProgressView()
             }
-            
-            if let species = viewModel.pokemonSpecies, let detail = species.flavorTextEntries.first(where: {$0.language.name == "en"}) {
-                ScrollView(.vertical, showsIndicators: false) {
-                    Text(detail.flavorText)
-                        .font(.system(size: 15, weight: .regular))
-                }
-                .padding(.vertical, 4)
-            }
-            
         }
-        .navigationTitle(viewModel.pokemon?.name.capitalizedFirstLetter() ?? L10n.Common.loading)
+        .navigationTitle(viewModel.navigationTitle)
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            await viewModel.loadIfNeeded()
+        }
     }
-    
+
+    private var errorView: some View {
+        VStack(spacing: 8) {
+            Image(systemName: "exclamationmark.triangle")
+                .font(.title3)
+            Text(L10n.Error.loadFailed)
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+            Button(L10n.Common.retry) {
+                Task { await viewModel.retry() }
+            }
+        }
+        .padding()
+    }
+
     @ViewBuilder
     func PKMTypeView(_ pokemon: Pokemon) -> some View {
         HStack {
             // Types Pokemon
             VStack(spacing: 0) {
-                ForEach(pokemon.types, id: \.self) { element in
-                    element.type.name.image
+                ForEach(pokemon.types, id: \.self) { type in
+                    type.image
                         .resizable()
                         .scaledToFit()
                         .frame(width: 36, height: 36)
+                        .accessibilityLabel(type.title)
                 }
             }
             // Image Pokemon
-            KFImage(URL(string: pokemon.sprites.frontDefault))
+            KFImage(pokemon.spriteURL)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 96)
         }
     }
-    
+
     @ViewBuilder
     func PKMDetailView(_ pokemon: Pokemon) -> some View {
         LazyHStack(spacing: 8) {
@@ -79,20 +98,21 @@ struct PokemonDetailView: View {
             }
         }
     }
-    
+
     @ViewBuilder
-    func PKMStatsView(_ pokemon: Pokemon) -> some View {
+    func PKMStatsView() -> some View {
         LazyVStack(alignment: .leading, spacing: 1) {
-            ProgressBarView(title: L10n.Pokemon.hp, value: viewModel.statHPValue, barColor: viewModel.barColor)
-            ProgressBarView(title: L10n.Pokemon.attack, value: viewModel.statAttackValue, barColor: viewModel.barColor)
-            ProgressBarView(title: L10n.Pokemon.defense, value: viewModel.statDefenseValue, barColor: viewModel.barColor)
-            ProgressBarView(title: L10n.Pokemon.sattack, value: viewModel.statSAttackValue, barColor: viewModel.barColor)
-            ProgressBarView(title: L10n.Pokemon.sdefense, value: viewModel.statSDefenseValue, barColor: viewModel.barColor)
-            ProgressBarView(title: L10n.Pokemon.speed, value: viewModel.statSpeedValue, barColor: viewModel.barColor)
+            ForEach(viewModel.stats) { stat in
+                ProgressBarView(
+                    title: stat.title,
+                    value: CGFloat(stat.baseValue),
+                    maxValue: PokemonStatKind.maxBaseValue,
+                    barColor: viewModel.barColor
+                )
+            }
         }
         .padding(20)
     }
-    
 }
 
 #Preview {

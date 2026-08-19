@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-enum PokemonType: String, Codable, Hashable, CaseIterable {
+///Model final de tipo. A decodificação fica nos DTOs, então aqui não precisa de `Codable`.
+enum PokemonType: String, Hashable, CaseIterable {
     case Bug = "bug"
     case Dark = "dark"
     case Dragon = "dragon"
@@ -27,6 +28,11 @@ enum PokemonType: String, Codable, Hashable, CaseIterable {
     case Steel = "steel"
     case Water = "water"
     
+    ///Nome exibível do tipo. Ex: `.Fight` -> "Fighting"
+    var title: String {
+        return rawValue.capitalizedFirstLetter()
+    }
+
     var image: Image {
         switch self {
         case .Bug: return Asset.bug.swiftUIImage
@@ -71,5 +77,17 @@ enum PokemonType: String, Codable, Hashable, CaseIterable {
         case .Steel: return Asset.steelColor.swiftUIColor
         case .Water: return Asset.waterColor.swiftUIColor
         }
+    }
+}
+
+///Model final do filtro por tipo: só o que a Home precisa para peneirar a lista.
+struct PokemonTypeFilter {
+    ///`nil` quando a API devolve um tipo que o app ainda não mapeou.
+    let type: PokemonType?
+    ///Números da Pokédex Nacional dos Pokémon desse tipo.
+    let nationalPokedexIDs: Set<Int>
+
+    func contains(_ entry: PokedexEntry) -> Bool {
+        return nationalPokedexIDs.contains(entry.id)
     }
 }

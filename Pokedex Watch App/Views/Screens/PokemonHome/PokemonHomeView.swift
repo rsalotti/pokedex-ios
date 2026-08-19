@@ -11,45 +11,111 @@ import Kingfisher
 struct PokemonHomeView: View {
     @StateObject var viewModel = PokemonHomeViewModel()
     @State var showFilter: Bool = false
-    
+
+    ///Quantidade de células fantasma exibidas enquanto a Pokédex carrega.
+    private let skeletonCount: Int = 6
+
     var body: some View {
         NavigationStack {
             ZStack {
-                List(viewModel.getPokemons()) { pokemon in
-                    let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
-                    NavigationLink(destination: destination) {
-                        PKMRowView(pokemon)
+                switch viewModel.state {
+                case .loading:
+                    skeletonList
+                case .failed:
+                    errorView
+                case .loaded:
+                    pokemonList
+                }
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button(action: {
+                        showFilter.toggle()
+                    }) {
+                        filterIcon
                     }
+                    .accessibilityLabel(L10n.Filter.title)
                 }
-                .toolbar {
-                    ToolbarItemGroup(placement: .topBarTrailing) {
-                        Button(action: {
-                            showFilter.toggle()
-                        }) {
-                            Image(systemName: "list.bullet")
-                        }
-                    }
+            }
+            .fullScreenCover(isPresented: $showFilter) {
+                PokemonTypeView(selectedType: viewModel.selectedType) { type in
+                    Task { await viewModel.selectType(type) }
                 }
-                .fullScreenCover(isPresented: $showFilter) {
-                    
-                } content: {
-                    PokemonTypeView()
-                }
-
-
+            }
+            .task {
+                await viewModel.loadIfNeeded()
             }
         }
     }
-    
+
+    ///Mostra o tipo ativo no lugar do ícone padrão para o filtro não ficar invisível.
     @ViewBuilder
-    func PKMRowView(_ pokemon: PKDPokemonEntry) -> some View {
+    private var filterIcon: some View {
+        if let selectedType = viewModel.selectedType {
+            selectedType.image
+                .resizable()
+                .frame(width: 20, height: 20)
+        } else {
+            Image(systemName: "list.bullet")
+        }
+    }
+
+    @ViewBuilder
+    private var pokemonList: some View {
+        let pokemons = viewModel.getPokemons()
+        if pokemons.isEmpty {
+            emptyView
+        } else {
+            List(pokemons) { pokemon in
+                let destination = PokemonDetailView(viewModel: PokemonDetailViewModel(idPokemon: pokemon.id))
+                NavigationLink(destination: destination) {
+                    PKMRowView(pokemon)
+                }
+            }
+        }
+    }
+
+    private var skeletonList: some View {
+        List(0..<skeletonCount, id: \.self) { _ in
+            SkeletonCellView()
+        }
+        .accessibilityLabel(L10n.Common.loading)
+    }
+
+    private var errorView: some View {
+        VStack(spacing: 8) {
+            Image(systemName: "exclamationmark.triangle")
+                .font(.title3)
+            Text(L10n.Error.loadFailed)
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+            Button(L10n.Common.retry) {
+                Task { await viewModel.retry() }
+            }
+        }
+        .padding()
+    }
+
+    private var emptyView: some View {
+        VStack(spacing: 8) {
+            Text(L10n.Error.emptyFilter)
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+            Button(L10n.Filter.clear) {
+                Task { await viewModel.selectType(nil) }
+            }
+        }
+        .padding()
+    }
+
+    @ViewBuilder
+    func PKMRowView(_ pokemon: PokedexEntry) -> some View {
         HStack {
-            let url = L10n.Sprite.url.replacingOccurrences(of: L10n.Common.element, with: String(pokemon.id))
-            KFImage(URL(string: url))
+            KFImage(pokemon.spriteURL)
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.trailing, 8)
-            Text(pokemon.pokemonSpecies.name.capitalizedFirstLetter())
+            Text(pokemon.displayName)
                 .font(.title3)
                 .lineLimit(1)
         }

@@ -7,32 +7,18 @@
 
 import Foundation
 
-struct PokemonSpecies: Codable {
-    let flavorTextEntries: [FlavorTextEntry]
-    
-    enum CodingKeys: String, CodingKey {
-        case flavorTextEntries = "flavor_text_entries"
+///Model final da espécie. Os textos já chegam limpos dos caracteres de controle da API.
+struct PokemonSpecies {
+    let flavorTexts: [FlavorText]
+
+    ///Primeira descrição no idioma pedido. Ex: `"en"`.
+    func flavorText(languageCode: String) -> String? {
+        return flavorTexts.first { $0.languageCode == languageCode }?.text
     }
 }
 
-struct FlavorTextEntry: Codable {
-    let flavorText: String
-    let language: FlavorLanguage
-    let version: FlavorVersion
-    
-    enum CodingKeys: String, CodingKey {
-        case flavorText = "flavor_text"
-        case language
-        case version
-    }
-}
-
-struct FlavorLanguage: Codable {
-    let name: String
-    let url: String
-}
-
-struct FlavorVersion: Codable {
-    let name: String
-    let url: String
+struct FlavorText: Hashable {
+    let text: String
+    let languageCode: String
+    let versionName: String
 }

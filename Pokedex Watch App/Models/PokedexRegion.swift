@@ -7,11 +7,13 @@
 
 import Foundation
 
-struct PokedexRegion: Codable {
-    let results: [RegionEntry]
+///Model final da lista de Pokédex por região.
+struct PokedexRegion {
+    let entries: [PokedexRegionEntry]
 }
 
-struct RegionEntry: Codable {
+struct PokedexRegionEntry: Identifiable, Hashable {
+    let id: Int
     let name: String
-    let url: String
+    let displayName: String
 }

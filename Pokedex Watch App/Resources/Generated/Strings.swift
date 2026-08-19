@@ -11,6 +11,8 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
   internal enum Common {
+    /// All types
+    internal static let allTypes = L10n.tr("Localizable", "common.allTypes", fallback: "All types")
     /// Base Lv.
     internal static let baseLevel = L10n.tr("Localizable", "common.baseLevel", fallback: "Base Lv.")
     /// $1
@@ -19,8 +21,22 @@ internal enum L10n {
     internal static let height = L10n.tr("Localizable", "common.height", fallback: "Height")
     /// Loading...
     internal static let loading = L10n.tr("Localizable", "common.loading", fallback: "Loading...")
+    /// Retry
+    internal static let retry = L10n.tr("Localizable", "common.retry", fallback: "Retry")
     /// Weight
     internal static let weight = L10n.tr("Localizable", "common.weight", fallback: "Weight")
+  }
+  internal enum Error {
+    /// No Pokémon found for this type.
+    internal static let emptyFilter = L10n.tr("Localizable", "error.emptyFilter", fallback: "No Pokémon found for this type.")
+    /// Couldn't load the Pokédex.
+    internal static let loadFailed = L10n.tr("Localizable", "error.loadFailed", fallback: "Couldn't load the Pokédex.")
+  }
+  internal enum Filter {
+    /// Show all Pokémon
+    internal static let clear = L10n.tr("Localizable", "filter.clear", fallback: "Show all Pokémon")
+    /// Filter by type
+    internal static let title = L10n.tr("Localizable", "filter.title", fallback: "Filter by type")
   }
   internal enum Format {
     /// %.1f m
@@ -33,23 +49,11 @@ internal enum L10n {
     }
   }
   internal enum Key {
-    /// attack
-    internal static let attack = L10n.tr("Localizable", "key.attack", fallback: "attack")
-    /// defense
-    internal static let defense = L10n.tr("Localizable", "key.defense", fallback: "defense")
-    /// en
-    internal static let en = L10n.tr("Localizable", "key.en", fallback: "en")
     /// Localizable.strings
     ///   Pokedex
     /// 
     ///   Created by Ricardo Salotti on 17/06/25.
-    internal static let hp = L10n.tr("Localizable", "key.hp", fallback: "hp")
-    /// special-attack
-    internal static let specialAttack = L10n.tr("Localizable", "key.special-attack", fallback: "special-attack")
-    /// special-defense
-    internal static let specialDefense = L10n.tr("Localizable", "key.special-defense", fallback: "special-defense")
-    /// speed
-    internal static let speed = L10n.tr("Localizable", "key.speed", fallback: "speed")
+    internal static let en = L10n.tr("Localizable", "key.en", fallback: "en")
   }
   internal enum Pokemon {
     /// Attack

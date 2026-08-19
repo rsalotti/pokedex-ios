@@ -7,81 +7,85 @@
 
 import SwiftUI
 
-///Usando @MainActor no init para realizar a chamada assíncrona logo após a inicialização
-/* Considerações importantes
-    1.  Gerenciamento do Ciclo de Vida: Ao fazer uma chamada assíncrona no init, você deve garantir que a View não seja recriada ou destruída enquanto a tarefa assíncrona ainda está em andamento. Isso pode ocorrer, por exemplo, ao alternar entre diferentes telas.
-    2.  Erros: Sempre trate erros adequadamente na função assíncrona para garantir que problemas de rede ou outras exceções não resultem em uma experiência ruim para o usuário.
-    3.  Atualizações na UI: Certifique-se de que as atualizações no modelo ocorrem na thread principal, especialmente quando a interface do usuário depende dessas atualizações.
- Esse é um lembrete para mim.
- */
 @MainActor
 class PokemonDetailViewModel: ObservableObject {
-    @Published var idPokemon: Int
-    @Published var pokemon: Pokemon?
-    @Published var pokemonSpecies: PokemonSpecies?
-    
-    private var statValues: [String: CGFloat] {
-        guard let pokemon else { return [:] }
-        return Dictionary(uniqueKeysWithValues:
-            pokemon.stats.map { ($0.stat.name, CGFloat($0.baseStat)) }
-        )
+    ///Estados possíveis da tela. A View decide o que desenhar a partir daqui.
+    enum State: Equatable {
+        case loading
+        case loaded
+        case failed
     }
 
-    var statHPValue: CGFloat { statValues[L10n.Key.hp] ?? 0 }
-    var statAttackValue: CGFloat { statValues[L10n.Key.attack] ?? 0 }
-    var statDefenseValue: CGFloat { statValues[L10n.Key.defense] ?? 0 }
-    var statSAttackValue: CGFloat { statValues[L10n.Key.specialAttack] ?? 0}
-    var statSDefenseValue: CGFloat { statValues[L10n.Key.specialDefense] ?? 0}
-    var statSpeedValue: CGFloat { statValues[L10n.Key.speed] ?? 0}
+    @Published private(set) var state: State = .loading
+    @Published private(set) var pokemon: Pokemon?
+    @Published private(set) var pokemonSpecies: PokemonSpecies?
+
+    let idPokemon: Int
+    private let repository: PokeRepositoryProtocol
+
+    ///Stats já vêm do mapper na ordem canônica, então a View só precisa iterar.
+    var stats: [PokemonStat] {
+        return pokemon?.stats ?? []
+    }
+
+    ///Descrição da espécie no idioma do app.
+    var description: String? {
+        return pokemonSpecies?.flavorText(languageCode: L10n.Key.en)
+    }
 
     var barColor: Color {
-        guard let barColor = pokemon?.types.first?.type.name.color else { return .bug }
-        return barColor
+        return pokemon?.primaryType?.color ?? PokemonType.Bug.color
     }
-    
-    init(idPokemon: Int) {
+
+    var navigationTitle: String {
+        return pokemon?.displayName ?? L10n.Common.loading
+    }
+
+    init(idPokemon: Int, repository: PokeRepositoryProtocol = PokeRepository()) {
         self.idPokemon = idPokemon
-        self.pokemon = nil
-        self.pokemonSpecies = nil
-        
-        //Tarefa Async logo após iniciar todas as variáveis.
-        Task {
-            async let detail: () = fetchPokemonDetail()
-            async let species: () = fetchPokemonSpecies()
-            //O Await espera as 2 chamadas acima serem finalizadas.
-            _ = await (detail, species)
-        }
+        self.repository = repository
     }
-    
-    func fetchPokemonDetail() async {
-        do {
-            let pokemon = try await PokeRepository().fetchSinglePokemon(id: idPokemon)
-            self.pokemon = pokemon
-        } catch let error {
-            // FIXME: - Corrigir caso dê algum problema
-            print(error.localizedDescription)
-        }
+
+    /**
+     All Public Methods
+     */
+    ///Chamado pela View no `.task`. Não refaz as chamadas se os dados já estiverem em mãos.
+    func loadIfNeeded() async {
+        guard pokemon == nil else { return }
+        await load()
     }
-    
-    func fetchPokemonSpecies() async {
-        do {
-            let specie = try await PokeRepository().fetchSinglePokemonSpecies(id: idPokemon)
-            self.pokemonSpecies = specie
-        } catch let error {
-            // FIXME: - Corrigir caso dê algum problema
-            print(error.localizedDescription)
-        }
+
+    func retry() async {
+        await load()
     }
-    
+
     func getWeightDescription() -> String {
-        guard let pokemon = pokemon else { return "" }
-        let weightInKilos = Float(pokemon.weight) / 10.0
-        return L10n.Format.weight(weightInKilos)
+        guard let pokemon else { return "" }
+        return L10n.Format.weight(pokemon.weightInKilograms)
     }
-    
+
     func getHeightDescription() -> String {
-        guard let pokemon = pokemon else { return "" }
-        let heightInMeters = Float(pokemon.height) / 10.0
-        return L10n.Format.height(heightInMeters)
+        guard let pokemon else { return "" }
+        return L10n.Format.height(pokemon.heightInMeters)
+    }
+
+    /**
+     All Private Methods
+     */
+    private func load() async {
+        state = .loading
+        //Detalhe e espécie são endpoints independentes, então vão em paralelo.
+        async let detail = repository.fetchSinglePokemon(id: idPokemon)
+        async let species = repository.fetchSinglePokemonSpecies(id: idPokemon)
+
+        do {
+            //O Await espera as 2 chamadas acima serem finalizadas.
+            let (pokemon, pokemonSpecies) = try await (detail, species)
+            self.pokemon = pokemon
+            self.pokemonSpecies = pokemonSpecies
+            state = .loaded
+        } catch {
+            state = .failed
+        }
     }
 }

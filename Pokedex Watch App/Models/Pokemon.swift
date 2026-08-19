@@ -7,62 +7,54 @@
 
 import Foundation
 
-struct Pokemon: Codable {
-    ///Height está em Decimetro
-    let height: Int
+///Model final do Pokémon. As unidades da API (decímetro/hectograma) já chegam aqui convertidas.
+struct Pokemon: Identifiable {
     let id: Int
-    let baseExperience: Int
     let name: String
+    let displayName: String
     let order: Int
-    let stats: [Stat]
-    let types: [TypeElement]
-    let sprites: Sprites
-    ///Weight está em Hectograma
-    let weight: Int
+    let baseExperience: Int
+    let heightInMeters: Float
+    let weightInKilograms: Float
+    let types: [PokemonType]
+    ///Sempre na ordem canônica de `PokemonStatKind`.
+    let stats: [PokemonStat]
+    let spriteURL: URL?
 
-    enum CodingKeys: String, CodingKey {
-        case height
-        case id
-        case baseExperience = "base_experience"
-        case name
-        case order
-        case stats
-        case types
-        case sprites
-        case weight
+    ///Tipo usado para colorir a UI do detalhe.
+    var primaryType: PokemonType? {
+        return types.first
     }
 }
 
-struct Stat: Codable {
-    let baseStat: Int
-    let effort: Int
-    let stat: StatDetail
+struct PokemonStat: Identifiable, Hashable {
+    let kind: PokemonStatKind
+    let baseValue: Int
 
-    enum CodingKeys: String, CodingKey {
-        case baseStat = "base_stat"
-        case effort, stat
-    }
+    var id: PokemonStatKind { kind }
+    var title: String { kind.title }
 }
 
-struct StatDetail: Codable {
-    let name: String
-    let url: String
-}
+///Os `rawValue` são as chaves que a PokéAPI usa em `/pokemon/{id}/stats`.
+enum PokemonStatKind: String, CaseIterable, Hashable {
+    case hp
+    case attack
+    case defense
+    case specialAttack = "special-attack"
+    case specialDefense = "special-defense"
+    case speed
 
-struct TypeElement: Codable, Hashable {
-    let slot: Int
-    let type: TypeDetail
-}
+    ///Maior valor base observado na série, usado como teto das barras de progresso.
+    static let maxBaseValue: CGFloat = 255
 
-struct TypeDetail: Codable, Hashable {
-    let name: PokemonType
-    let url: String
-}
-
-struct Sprites: Codable {
-    let frontDefault: String
-    
-    enum CodingKeys: String, CodingKey {
-        case frontDefault = "front_default"
+    var title: String {
+        switch self {
+        case .hp: return L10n.Pokemon.hp
+        case .attack: return L10n.Pokemon.attack
+        case .defense: return L10n.Pokemon.defense
+        case .specialAttack: return L10n.Pokemon.sattack
+        case .specialDefense: return L10n.Pokemon.sdefense
+        case .speed: return L10n.Pokemon.speed
+        }
     }
 }
