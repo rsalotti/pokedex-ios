@@ -23,5 +23,6 @@ struct PokedexEntry: Identifiable, Hashable {
     let id: Int
     let name: String
     let displayName: String
-    let spriteURL: URL?
+    ///Mesma arte oficial usada no detalhe, para a lista e a tela cheia baterem.
+    let artworkURL: URL?
 }

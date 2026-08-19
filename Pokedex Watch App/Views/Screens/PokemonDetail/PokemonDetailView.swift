@@ -69,6 +69,7 @@ struct PokemonDetailView: View {
             }
             // Image Pokemon
             KFImage(pokemon.artworkURL)
+                .setProcessor(DownsamplingImageProcessor(size: CGSize(width: 96, height: 96)))
                 .resizable()
                 .scaledToFit()
                 .frame(height: 96)

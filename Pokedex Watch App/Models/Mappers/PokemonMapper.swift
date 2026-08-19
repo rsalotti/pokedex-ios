@@ -19,15 +19,17 @@ enum PokemonMapper: DTOMapper {
             weightInKilograms: Float(dto.weight) / PokeAPIRules.hectogramsToKilograms,
             types: types(from: dto.types),
             stats: stats(from: dto.stats),
-            artworkURL: artworkURL(from: dto.sprites)
+            artworkURL: artworkURL(from: dto)
         )
     }
 
-    ///A tela de detalhe usa a arte oficial em alta resolução.
-    ///Nem todo Pokémon tem uma, então cai no sprite pixelado quando falta.
-    private static func artworkURL(from dto: PokemonSpritesDTO) -> URL? {
-        let path = dto.other?.officialArtwork?.frontDefault ?? dto.frontDefault
-        return path.flatMap { URL(string: $0) }
+    ///Prefere a arte oficial que a própria resposta traz. Quando o campo vem vazio,
+    ///monta a URL pelo número nacional — a mesma regra da lista, para as duas telas baterem.
+    private static func artworkURL(from dto: PokemonDTO) -> URL? {
+        if let path = dto.sprites.other?.officialArtwork?.frontDefault {
+            return URL(string: path)
+        }
+        return PokeAPIRules.artworkURL(forNationalID: dto.id)
     }
 
     ///Respeita o `slot` da API (slot 1 é o tipo primário) e ignora tipos que o app não conhece.

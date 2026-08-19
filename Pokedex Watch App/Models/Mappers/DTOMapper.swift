@@ -32,9 +32,10 @@ enum PokeAPIRules {
     static let decimetersToMeters: Float = 10
     static let hectogramsToKilograms: Float = 10
 
-    ///Monta a URL do sprite a partir do número nacional.
-    static func spriteURL(forNationalID id: Int) -> URL? {
-        let path = L10n.Sprite.url.replacingOccurrences(of: L10n.Common.element, with: String(id))
+    ///Monta a URL da arte oficial a partir do número nacional.
+    ///A lista da Home só tem o número, então não dá para usar o campo `sprites` da API.
+    static func artworkURL(forNationalID id: Int) -> URL? {
+        let path = L10n.Sprite.artworkUrl.replacingOccurrences(of: L10n.Common.element, with: String(id))
         return URL(string: path)
     }
 }

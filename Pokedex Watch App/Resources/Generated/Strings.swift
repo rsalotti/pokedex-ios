@@ -70,8 +70,8 @@ internal enum L10n {
     internal static let speed = L10n.tr("Localizable", "pokemon.speed", fallback: "Speed")
   }
   internal enum Sprite {
-    /// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$1.png
-    internal static let url = L10n.tr("Localizable", "sprite.url", fallback: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$1.png")
+    /// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$1.png
+    internal static let artworkUrl = L10n.tr("Localizable", "sprite.artworkUrl", fallback: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$1.png")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

@@ -23,7 +23,7 @@ enum PokedexMapper: DTOMapper {
             id: dto.entryNumber,
             name: dto.pokemonSpecies.name,
             displayName: dto.pokemonSpecies.name.capitalizedFirstLetter(),
-            spriteURL: PokeAPIRules.spriteURL(forNationalID: dto.entryNumber)
+            artworkURL: PokeAPIRules.artworkURL(forNationalID: dto.entryNumber)
         )
     }
 

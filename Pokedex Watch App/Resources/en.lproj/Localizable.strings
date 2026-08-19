@@ -40,4 +40,5 @@
 "format.height" = "%.1f m";
 
 // Pokemon UrlSprite
-"sprite.url" = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$1.png";
+//Arte oficial em alta resolucao, usada tanto na lista quanto no detalhe.
+"sprite.artworkUrl" = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$1.png";

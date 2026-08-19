@@ -111,7 +111,10 @@ struct PokemonHomeView: View {
     @ViewBuilder
     func PKMRowView(_ pokemon: PokedexEntry) -> some View {
         HStack {
-            KFImage(pokemon.spriteURL)
+            //A arte oficial é 475x475. Sem reduzir, cada linha decodifica uma imagem
+            //muito maior do que a célula, o que pesa memória e rede no Watch.
+            KFImage(pokemon.artworkURL)
+                .setProcessor(DownsamplingImageProcessor(size: CGSize(width: 50, height: 50)))
                 .resizable()
                 .frame(width: 50, height: 50, alignment: .center)
                 .padding(.trailing, 8)
