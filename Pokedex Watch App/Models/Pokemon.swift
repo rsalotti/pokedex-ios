@@ -19,7 +19,8 @@ struct Pokemon: Identifiable {
     let types: [PokemonType]
     ///Sempre na ordem canônica de `PokemonStatKind`.
     let stats: [PokemonStat]
-    let spriteURL: URL?
+    ///Arte oficial em alta resolução. A lista da Home usa o sprite pequeno de `PokedexEntry`.
+    let artworkURL: URL?
 
     ///Tipo usado para colorir a UI do detalhe.
     var primaryType: PokemonType? {

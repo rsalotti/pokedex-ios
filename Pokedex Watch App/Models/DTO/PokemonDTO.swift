@@ -52,7 +52,26 @@ struct PokemonTypeSlotDTO: Decodable {
 }
 
 struct PokemonSpritesDTO: Decodable {
-    ///A PokéAPI devolve `null` para alguns Pokémon sem sprite.
+    ///Sprite pixelado pequeno. A PokéAPI devolve `null` para alguns Pokémon.
+    let frontDefault: String?
+    let other: PokemonOtherSpritesDTO?
+
+    enum CodingKeys: String, CodingKey {
+        case frontDefault = "front_default"
+        case other
+    }
+}
+
+struct PokemonOtherSpritesDTO: Decodable {
+    let officialArtwork: PokemonArtworkDTO?
+
+    enum CodingKeys: String, CodingKey {
+        case officialArtwork = "official-artwork"
+    }
+}
+
+///Arte oficial em alta resolução, usada na tela de detalhe.
+struct PokemonArtworkDTO: Decodable {
     let frontDefault: String?
 
     enum CodingKeys: String, CodingKey {

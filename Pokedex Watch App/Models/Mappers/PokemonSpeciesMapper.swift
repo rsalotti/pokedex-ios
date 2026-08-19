@@ -22,16 +22,16 @@ enum PokemonSpeciesMapper: DTOMapper {
         )
     }
 
-    ///Os textos originais vêm com quebras de linha e um form feed (`\u{0C}`) herdados dos jogos.
-    ///Sem limpar, a descrição quebra em lugares aleatórios na tela do Watch.
+    ///Os textos originais vêm com quebras de linha fixas, form feed (`\u{0C}`) e soft hyphen,
+    ///herdados da caixa de texto dos jogos. Sem limpar, a descrição quebra em lugares
+    ///aleatórios na tela do Watch.
     private static func sanitize(_ text: String) -> String {
-        let normalized = text.replacingOccurrences(
-            of: "[\\n\\r\\u{0C}\\u{00AD}]",
-            with: " ",
-            options: .regularExpression
-        )
-        return normalized
-            .replacingOccurrences(of: " +", with: " ", options: .regularExpression)
-            .trimmingCharacters(in: .whitespacesAndNewlines)
+        let separators = CharacterSet.whitespacesAndNewlines
+            .union(CharacterSet(charactersIn: "\u{0C}\u{00AD}"))
+
+        return text
+            .components(separatedBy: separators)
+            .filter { !$0.isEmpty }
+            .joined(separator: " ")
     }
 }

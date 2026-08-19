@@ -68,7 +68,7 @@ struct PokemonDetailView: View {
                 }
             }
             // Image Pokemon
-            KFImage(pokemon.spriteURL)
+            KFImage(pokemon.artworkURL)
                 .resizable()
                 .scaledToFit()
                 .frame(height: 96)
